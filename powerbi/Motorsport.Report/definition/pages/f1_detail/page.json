@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "f1_detail",
+  "displayName": "Drillthrough detail",
+  "displayOption": "FitToPage",
+  "width": 1440,
+  "height": 900,
+  "type": "Drillthrough",
+  "visibility": "HiddenInViewMode",
+  "pageBinding": {
+    "name": "f1_detail_binding",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "f1_detail_context",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimDriver"
+              }
+            },
+            "Property": "Driver"
+          }
+        },
+        "boundFilter": "f1_detail_filter"
+      }
+    ]
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f1_detail_filter",
+        "type": "Categorical",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimDriver"
+              }
+            },
+            "Property": "Driver"
+          }
+        },
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#101925'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

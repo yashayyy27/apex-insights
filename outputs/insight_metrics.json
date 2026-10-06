@@ -1,0 +1,26 @@
+{
+  "revenue_2024": 87719379.47,
+  "revenue_yoy": 0.1373005618893659,
+  "gross_margin": 0.4868881949239808,
+  "sales_rows": 248580,
+  "weak_category": "Coffee",
+  "weak_category_yoy": 0.03581615930769133,
+  "strongest_category": "Energy",
+  "existing_coffee_yoy": -0.19959224663638575,
+  "promo_campaigns": 2321,
+  "negative_campaigns": 2282,
+  "net_promotion_profit": -1286637.04,
+  "negative_campaign_profit": -1287575.73,
+  "top_mover": "Lewis Hamilton",
+  "top_mover_gain": 2.5,
+  "top_mover_n": 22,
+  "champion_constructor": "McLaren",
+  "constructor_points_gap": 14.0,
+  "bridge": {
+    "RevenueDelta": 10589918.350000001,
+    "VolumeEffect": 3880629.27962246,
+    "PriceMixEffect": 2684873.9585768282,
+    "InteractionEffect": 130080.44180071249,
+    "NewProductEffect": 3894334.67
+  }
+}

@@ -1,0 +1,1678 @@
+{
+  "status": "PASS",
+  "checks": 334,
+  "failures": [],
+  "results": [
+    {
+      "check": "fmcg.table_coverage",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "fmcg.DimCategory.nonempty",
+      "passed": true,
+      "detail": "5"
+    },
+    {
+      "check": "fmcg.DimCategory.primary_key",
+      "passed": true,
+      "detail": "CategoryKey"
+    },
+    {
+      "check": "fmcg.DimCategory.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimCategory.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimChannel.nonempty",
+      "passed": true,
+      "detail": "5"
+    },
+    {
+      "check": "fmcg.DimChannel.primary_key",
+      "passed": true,
+      "detail": "ChannelKey"
+    },
+    {
+      "check": "fmcg.DimChannel.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimChannel.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimCustomer.nonempty",
+      "passed": true,
+      "detail": "15"
+    },
+    {
+      "check": "fmcg.DimCustomer.primary_key",
+      "passed": true,
+      "detail": "CustomerKey"
+    },
+    {
+      "check": "fmcg.DimCustomer.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimCustomer.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimDate.nonempty",
+      "passed": true,
+      "detail": "731"
+    },
+    {
+      "check": "fmcg.DimDate.primary_key",
+      "passed": true,
+      "detail": "Date"
+    },
+    {
+      "check": "fmcg.DimDate.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimDate.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimDate.valid_dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimDate.date_scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimProduct.nonempty",
+      "passed": true,
+      "detail": "24"
+    },
+    {
+      "check": "fmcg.DimProduct.primary_key",
+      "passed": true,
+      "detail": "ProductKey"
+    },
+    {
+      "check": "fmcg.DimProduct.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimProduct.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimRegion.nonempty",
+      "passed": true,
+      "detail": "3"
+    },
+    {
+      "check": "fmcg.DimRegion.primary_key",
+      "passed": true,
+      "detail": "RegionKey"
+    },
+    {
+      "check": "fmcg.DimRegion.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.DimRegion.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactDistribution.nonempty",
+      "passed": true,
+      "detail": "248580"
+    },
+    {
+      "check": "fmcg.FactDistribution.primary_key",
+      "passed": true,
+      "detail": "Date,ProductKey,CustomerKey"
+    },
+    {
+      "check": "fmcg.FactDistribution.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactDistribution.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactDistribution.valid_dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactDistribution.date_scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactDistribution.distribution_bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.nonempty",
+      "passed": true,
+      "detail": "930"
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.primary_key",
+      "passed": true,
+      "detail": "Date,ProductKey,CustomerKey"
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.Trials_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.RepeatWithin28d_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.valid_dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.date_scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.repeat_bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.cohort_complete",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactMarket.nonempty",
+      "passed": true,
+      "detail": "54825"
+    },
+    {
+      "check": "fmcg.FactMarket.primary_key",
+      "passed": true,
+      "detail": "Date,CategoryKey,ChannelKey,RegionKey"
+    },
+    {
+      "check": "fmcg.FactMarket.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactMarket.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactMarket.MarketRevenue_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactMarket.valid_dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactMarket.date_scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactPromotion.nonempty",
+      "passed": true,
+      "detail": "31075"
+    },
+    {
+      "check": "fmcg.FactPromotion.primary_key",
+      "passed": true,
+      "detail": "Date,ProductKey,CustomerKey"
+    },
+    {
+      "check": "fmcg.FactPromotion.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactPromotion.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactPromotion.valid_dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactPromotion.date_scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.nonempty",
+      "passed": true,
+      "detail": "248580"
+    },
+    {
+      "check": "fmcg.FactSales.primary_key",
+      "passed": true,
+      "detail": "Date,ProductKey,CustomerKey"
+    },
+    {
+      "check": "fmcg.FactSales.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.Units_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.Revenue_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.COGS_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.VolumeLitres_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.valid_dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.date_scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.revenue_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.cogs_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.gross_profit_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.margin_possible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.discount_bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactTargets.nonempty",
+      "passed": true,
+      "detail": "248580"
+    },
+    {
+      "check": "fmcg.FactTargets.primary_key",
+      "passed": true,
+      "detail": "Date,ProductKey,CustomerKey"
+    },
+    {
+      "check": "fmcg.FactTargets.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactTargets.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactTargets.TargetUnits_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactTargets.TargetRevenue_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactTargets.valid_dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactTargets.date_scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.FactSales.Date.foreign_key",
+      "passed": true,
+      "detail": "DimDate"
+    },
+    {
+      "check": "fmcg.FactSales.CategoryKey.foreign_key",
+      "passed": true,
+      "detail": "DimCategory"
+    },
+    {
+      "check": "fmcg.FactSales.ChannelKey.foreign_key",
+      "passed": true,
+      "detail": "DimChannel"
+    },
+    {
+      "check": "fmcg.FactSales.RegionKey.foreign_key",
+      "passed": true,
+      "detail": "DimRegion"
+    },
+    {
+      "check": "fmcg.FactSales.ProductKey.foreign_key",
+      "passed": true,
+      "detail": "DimProduct"
+    },
+    {
+      "check": "fmcg.FactSales.CustomerKey.foreign_key",
+      "passed": true,
+      "detail": "DimCustomer"
+    },
+    {
+      "check": "fmcg.FactDistribution.Date.foreign_key",
+      "passed": true,
+      "detail": "DimDate"
+    },
+    {
+      "check": "fmcg.FactDistribution.CategoryKey.foreign_key",
+      "passed": true,
+      "detail": "DimCategory"
+    },
+    {
+      "check": "fmcg.FactDistribution.ChannelKey.foreign_key",
+      "passed": true,
+      "detail": "DimChannel"
+    },
+    {
+      "check": "fmcg.FactDistribution.RegionKey.foreign_key",
+      "passed": true,
+      "detail": "DimRegion"
+    },
+    {
+      "check": "fmcg.FactDistribution.ProductKey.foreign_key",
+      "passed": true,
+      "detail": "DimProduct"
+    },
+    {
+      "check": "fmcg.FactDistribution.CustomerKey.foreign_key",
+      "passed": true,
+      "detail": "DimCustomer"
+    },
+    {
+      "check": "fmcg.FactTargets.Date.foreign_key",
+      "passed": true,
+      "detail": "DimDate"
+    },
+    {
+      "check": "fmcg.FactTargets.CategoryKey.foreign_key",
+      "passed": true,
+      "detail": "DimCategory"
+    },
+    {
+      "check": "fmcg.FactTargets.ChannelKey.foreign_key",
+      "passed": true,
+      "detail": "DimChannel"
+    },
+    {
+      "check": "fmcg.FactTargets.RegionKey.foreign_key",
+      "passed": true,
+      "detail": "DimRegion"
+    },
+    {
+      "check": "fmcg.FactTargets.ProductKey.foreign_key",
+      "passed": true,
+      "detail": "DimProduct"
+    },
+    {
+      "check": "fmcg.FactTargets.CustomerKey.foreign_key",
+      "passed": true,
+      "detail": "DimCustomer"
+    },
+    {
+      "check": "fmcg.FactPromotion.Date.foreign_key",
+      "passed": true,
+      "detail": "DimDate"
+    },
+    {
+      "check": "fmcg.FactPromotion.CategoryKey.foreign_key",
+      "passed": true,
+      "detail": "DimCategory"
+    },
+    {
+      "check": "fmcg.FactPromotion.ChannelKey.foreign_key",
+      "passed": true,
+      "detail": "DimChannel"
+    },
+    {
+      "check": "fmcg.FactPromotion.RegionKey.foreign_key",
+      "passed": true,
+      "detail": "DimRegion"
+    },
+    {
+      "check": "fmcg.FactPromotion.ProductKey.foreign_key",
+      "passed": true,
+      "detail": "DimProduct"
+    },
+    {
+      "check": "fmcg.FactPromotion.CustomerKey.foreign_key",
+      "passed": true,
+      "detail": "DimCustomer"
+    },
+    {
+      "check": "fmcg.FactMarket.Date.foreign_key",
+      "passed": true,
+      "detail": "DimDate"
+    },
+    {
+      "check": "fmcg.FactMarket.CategoryKey.foreign_key",
+      "passed": true,
+      "detail": "DimCategory"
+    },
+    {
+      "check": "fmcg.FactMarket.ChannelKey.foreign_key",
+      "passed": true,
+      "detail": "DimChannel"
+    },
+    {
+      "check": "fmcg.FactMarket.RegionKey.foreign_key",
+      "passed": true,
+      "detail": "DimRegion"
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.Date.foreign_key",
+      "passed": true,
+      "detail": "DimDate"
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.CategoryKey.foreign_key",
+      "passed": true,
+      "detail": "DimCategory"
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.ChannelKey.foreign_key",
+      "passed": true,
+      "detail": "DimChannel"
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.RegionKey.foreign_key",
+      "passed": true,
+      "detail": "DimRegion"
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.ProductKey.foreign_key",
+      "passed": true,
+      "detail": "DimProduct"
+    },
+    {
+      "check": "fmcg.FactInnovationPanel.CustomerKey.foreign_key",
+      "passed": true,
+      "detail": "DimCustomer"
+    },
+    {
+      "check": "f1.table_coverage",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "f1.DimCircuit.nonempty",
+      "passed": true,
+      "detail": "24"
+    },
+    {
+      "check": "f1.DimCircuit.primary_key",
+      "passed": true,
+      "detail": "CircuitKey"
+    },
+    {
+      "check": "f1.DimCircuit.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimCircuit.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimConstructor.nonempty",
+      "passed": true,
+      "detail": "12"
+    },
+    {
+      "check": "f1.DimConstructor.primary_key",
+      "passed": true,
+      "detail": "ConstructorKey"
+    },
+    {
+      "check": "f1.DimConstructor.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimConstructor.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimDate.nonempty",
+      "passed": true,
+      "detail": "731"
+    },
+    {
+      "check": "f1.DimDate.primary_key",
+      "passed": true,
+      "detail": "Date"
+    },
+    {
+      "check": "f1.DimDate.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimDate.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimDate.valid_dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimDate.date_scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimDriver.nonempty",
+      "passed": true,
+      "detail": "25"
+    },
+    {
+      "check": "f1.DimDriver.primary_key",
+      "passed": true,
+      "detail": "DriverKey"
+    },
+    {
+      "check": "f1.DimDriver.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimDriver.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimRace.nonempty",
+      "passed": true,
+      "detail": "46"
+    },
+    {
+      "check": "f1.DimRace.primary_key",
+      "passed": true,
+      "detail": "RaceKey"
+    },
+    {
+      "check": "f1.DimRace.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimRace.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimRace.valid_dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimRace.date_scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimSeason.nonempty",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "check": "f1.DimSeason.primary_key",
+      "passed": true,
+      "detail": "Season"
+    },
+    {
+      "check": "f1.DimSeason.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimSeason.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactConstructorStandings.nonempty",
+      "passed": true,
+      "detail": "20"
+    },
+    {
+      "check": "f1.FactConstructorStandings.primary_key",
+      "passed": true,
+      "detail": "Season,ConstructorKey"
+    },
+    {
+      "check": "f1.FactConstructorStandings.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactConstructorStandings.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactConstructorStandings.Points_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactDriverStandings.nonempty",
+      "passed": true,
+      "detail": "46"
+    },
+    {
+      "check": "f1.FactDriverStandings.primary_key",
+      "passed": true,
+      "detail": "Season,DriverKey"
+    },
+    {
+      "check": "f1.FactDriverStandings.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactDriverStandings.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactDriverStandings.Points_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactLaps.nonempty",
+      "passed": true,
+      "detail": "2362"
+    },
+    {
+      "check": "f1.FactLaps.primary_key",
+      "passed": true,
+      "detail": "RaceKey,DriverKey,Lap"
+    },
+    {
+      "check": "f1.FactLaps.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactLaps.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactLaps.LapSeconds_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactPitStops.nonempty",
+      "passed": true,
+      "detail": "1737"
+    },
+    {
+      "check": "f1.FactPitStops.primary_key",
+      "passed": true,
+      "detail": "RaceKey,DriverKey,Stop"
+    },
+    {
+      "check": "f1.FactPitStops.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactPitStops.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactPitStops.DurationSeconds_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactQualifying.nonempty",
+      "passed": true,
+      "detail": "919"
+    },
+    {
+      "check": "f1.FactQualifying.primary_key",
+      "passed": true,
+      "detail": "RaceKey,DriverKey"
+    },
+    {
+      "check": "f1.FactQualifying.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactQualifying.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactRaceResults.nonempty",
+      "passed": true,
+      "detail": "919"
+    },
+    {
+      "check": "f1.FactRaceResults.primary_key",
+      "passed": true,
+      "detail": "RaceKey,DriverKey"
+    },
+    {
+      "check": "f1.FactRaceResults.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactRaceResults.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactRaceResults.Points_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactRaceResults.unique_finishes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactRaceResults.finish_bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactRaceResults.grid_bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactRaceResults.points_bound",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactRaceResults.completion_status_mapping",
+      "passed": true,
+      "detail": "Finished/Lapped and legacy +N Lap(s) are completed; retirement/DNS/DSQ are not"
+    },
+    {
+      "check": "f1.FactRaceResults.movement_population",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactRaceResults.movement_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactSprintResults.nonempty",
+      "passed": true,
+      "detail": "240"
+    },
+    {
+      "check": "f1.FactSprintResults.primary_key",
+      "passed": true,
+      "detail": "RaceKey,DriverKey"
+    },
+    {
+      "check": "f1.FactSprintResults.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactSprintResults.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactSprintResults.Points_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactSprintResults.unique_finishes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactSprintResults.finish_bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactSprintResults.grid_bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactSprintResults.points_bound",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactSprintResults.completion_status_mapping",
+      "passed": true,
+      "detail": "Finished/Lapped and legacy +N Lap(s) are completed; retirement/DNS/DSQ are not"
+    },
+    {
+      "check": "f1.FactSprintResults.movement_population",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.FactSprintResults.movement_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "f1.DimRace.CircuitKey.foreign_key",
+      "passed": true,
+      "detail": "DimCircuit"
+    },
+    {
+      "check": "f1.DimRace.Season.foreign_key",
+      "passed": true,
+      "detail": "DimSeason"
+    },
+    {
+      "check": "f1.DimRace.Date.foreign_key",
+      "passed": true,
+      "detail": "DimDate"
+    },
+    {
+      "check": "f1.FactRaceResults.RaceKey.foreign_key",
+      "passed": true,
+      "detail": "DimRace"
+    },
+    {
+      "check": "f1.FactRaceResults.DriverKey.foreign_key",
+      "passed": true,
+      "detail": "DimDriver"
+    },
+    {
+      "check": "f1.FactRaceResults.ConstructorKey.foreign_key",
+      "passed": true,
+      "detail": "DimConstructor"
+    },
+    {
+      "check": "f1.FactQualifying.RaceKey.foreign_key",
+      "passed": true,
+      "detail": "DimRace"
+    },
+    {
+      "check": "f1.FactQualifying.DriverKey.foreign_key",
+      "passed": true,
+      "detail": "DimDriver"
+    },
+    {
+      "check": "f1.FactQualifying.ConstructorKey.foreign_key",
+      "passed": true,
+      "detail": "DimConstructor"
+    },
+    {
+      "check": "f1.FactSprintResults.RaceKey.foreign_key",
+      "passed": true,
+      "detail": "DimRace"
+    },
+    {
+      "check": "f1.FactSprintResults.DriverKey.foreign_key",
+      "passed": true,
+      "detail": "DimDriver"
+    },
+    {
+      "check": "f1.FactSprintResults.ConstructorKey.foreign_key",
+      "passed": true,
+      "detail": "DimConstructor"
+    },
+    {
+      "check": "f1.FactPitStops.RaceKey.foreign_key",
+      "passed": true,
+      "detail": "DimRace"
+    },
+    {
+      "check": "f1.FactPitStops.DriverKey.foreign_key",
+      "passed": true,
+      "detail": "DimDriver"
+    },
+    {
+      "check": "f1.FactPitStops.ConstructorKey.foreign_key",
+      "passed": true,
+      "detail": "DimConstructor"
+    },
+    {
+      "check": "f1.FactLaps.RaceKey.foreign_key",
+      "passed": true,
+      "detail": "DimRace"
+    },
+    {
+      "check": "f1.FactLaps.DriverKey.foreign_key",
+      "passed": true,
+      "detail": "DimDriver"
+    },
+    {
+      "check": "f1.FactLaps.ConstructorKey.foreign_key",
+      "passed": true,
+      "detail": "DimConstructor"
+    },
+    {
+      "check": "f1.FactDriverStandings.Season.foreign_key",
+      "passed": true,
+      "detail": "DimSeason"
+    },
+    {
+      "check": "f1.FactDriverStandings.DriverKey.foreign_key",
+      "passed": true,
+      "detail": "DimDriver"
+    },
+    {
+      "check": "f1.FactConstructorStandings.Season.foreign_key",
+      "passed": true,
+      "detail": "DimSeason"
+    },
+    {
+      "check": "f1.FactConstructorStandings.ConstructorKey.foreign_key",
+      "passed": true,
+      "detail": "DimConstructor"
+    },
+    {
+      "check": "public.table_coverage",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "public.PublicContext.nonempty",
+      "passed": true,
+      "detail": "3"
+    },
+    {
+      "check": "public.PublicContext.primary_key",
+      "passed": true,
+      "detail": "Metric"
+    },
+    {
+      "check": "public.PublicContext.required_not_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "public.PublicContext.provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fmcg.category_alignment",
+      "passed": true,
+      "detail": "Fact SKU/category consistency"
+    },
+    {
+      "check": "fmcg.channel_alignment",
+      "passed": true,
+      "detail": "Fact account/channel consistency"
+    },
+    {
+      "check": "fmcg.region_alignment",
+      "passed": true,
+      "detail": "Fact account/region consistency"
+    },
+    {
+      "check": "fmcg.volume_identity",
+      "passed": true,
+      "detail": "Litres per pack"
+    },
+    {
+      "check": "fmcg.no_prelaunch_sales",
+      "passed": true,
+      "detail": "Launch cutoffs"
+    },
+    {
+      "check": "fmcg.FactDistribution.same_grain",
+      "passed": true,
+      "detail": "Sales-aligned keys"
+    },
+    {
+      "check": "fmcg.FactTargets.same_grain",
+      "passed": true,
+      "detail": "Sales-aligned keys"
+    },
+    {
+      "check": "fmcg.market_components",
+      "passed": true,
+      "detail": "Focal sales included once"
+    },
+    {
+      "check": "fmcg.promotion_profit_identity",
+      "passed": true,
+      "detail": "No double-counted discount"
+    },
+    {
+      "check": "fmcg.date_contiguous",
+      "passed": true,
+      "detail": "731 daily dates"
+    },
+    {
+      "check": "f1.driver_points_reconciliation",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "check": "f1.constructor_points_reconciliation",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "check": "source_hash.2023_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_results_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_results_offset100.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_results_offset200.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_results_offset300.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_results_offset400.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_qualifying_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_qualifying_offset100.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_qualifying_offset200.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_qualifying_offset300.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_qualifying_offset400.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_sprint_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_sprint_offset100.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_1_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_2_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_3_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_4_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_5_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_6_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_7_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_8_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_9_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_10_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_11_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_12_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_13_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_13_pitstops_offset100.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_14_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_15_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_16_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_17_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_18_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_19_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_20_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_21_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_22_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_driverstandings_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2023_constructorstandings_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_results_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_results_offset100.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_results_offset200.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_results_offset300.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_results_offset400.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_qualifying_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_qualifying_offset100.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_qualifying_offset200.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_qualifying_offset300.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_qualifying_offset400.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_sprint_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_sprint_offset100.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_2_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_3_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_4_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_5_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_6_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_7_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_9_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_10_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_11_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_12_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_13_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_14_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_15_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_16_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_17_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_18_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_19_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_20_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_21_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_22_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_23_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_24_pitstops_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_driverstandings_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_constructorstandings_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_laps_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_laps_offset100.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_laps_offset200.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_laps_offset300.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_laps_offset400.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_laps_offset500.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_laps_offset600.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_laps_offset700.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_laps_offset800.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_laps_offset900.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_laps_offset1000.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_1_laps_offset1100.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset0.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset100.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset200.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset300.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset400.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset500.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset600.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset700.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset800.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset900.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset1000.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset1100.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "source_hash.2024_8_laps_offset1200.json",
+      "passed": true,
+      "detail": "PUBLIC raw response"
+    },
+    {
+      "check": "sql.foreign_key_check",
+      "passed": true,
+      "detail": "Constrained mart"
+    },
+    {
+      "check": "sql.revenue_bridge",
+      "passed": true,
+      "detail": 4.3197223575930366e-09
+    }
+  ],
+  "powerbi_runtime": "NOT TESTED: Power BI Desktop unavailable on macOS"
+}

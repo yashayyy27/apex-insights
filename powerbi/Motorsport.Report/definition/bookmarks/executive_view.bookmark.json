@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.0.0/schema.json",
+  "name": "executive_view",
+  "displayName": "Executive view",
+  "options": {
+    "suppressData": true,
+    "suppressDisplay": true,
+    "suppressActiveSection": false
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "f1_01",
+    "sections": {}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "APEX Commercial",
+  "dataColors": [
+    "#AD3045",
+    "#6485A0",
+    "#CBA36F",
+    "#8B739E",
+    "#618E85"
+  ],
+  "background": "#F3F5F7",
+  "foreground": "#172B3A",
+  "tableAccent": "#AD3045",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI",
+      "fontSize": 14,
+      "color": "#172B3A"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 11,
+      "color": "#172B3A"
+    }
+  }
+}

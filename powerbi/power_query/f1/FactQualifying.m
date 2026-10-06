@@ -1,0 +1,1 @@
+fnLoadCsv("f1/FactQualifying.csv",{{"RaceKey",Int64.Type},{"DriverKey",type text},{"ConstructorKey",type text},{"DataClass",type text},{"QualifyingPosition",Int64.Type},{"Q1Seconds",type number},{"Q2Seconds",type number},{"Q3Seconds",type number}},{"RaceKey","DriverKey"},{"Q1Seconds","Q2Seconds","Q3Seconds"},{"PUBLIC","PUBLIC_DERIVED"})

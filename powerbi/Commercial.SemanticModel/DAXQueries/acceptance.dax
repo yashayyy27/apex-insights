@@ -1,0 +1,2 @@
+EVALUATE
+SUMMARIZECOLUMNS(DimDate[Year],"Revenue",[Revenue],"GP",[Gross Profit],"Velocity",[Velocity],"MarketShare",[Simulated Market Share %])

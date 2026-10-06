@@ -1,0 +1,98 @@
+[
+  {
+    "domain": "fmcg",
+    "page": "Executive Performance",
+    "file": "assets/screenshots/reference/fmcg_01.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Category Performance",
+    "file": "assets/screenshots/reference/fmcg_02.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Customer and Channel",
+    "file": "assets/screenshots/reference/fmcg_03.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Range and SKU Productivity",
+    "file": "assets/screenshots/reference/fmcg_04.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Promotion and Pricing",
+    "file": "assets/screenshots/reference/fmcg_05.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Innovation Performance",
+    "file": "assets/screenshots/reference/fmcg_06.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Opportunity Finder",
+    "file": "assets/screenshots/reference/fmcg_07.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Executive Action Centre",
+    "file": "assets/screenshots/reference/fmcg_08.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "f1",
+    "page": "Championship Command Centre",
+    "file": "assets/screenshots/reference/f1_01.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "f1",
+    "page": "Driver Intelligence",
+    "file": "assets/screenshots/reference/f1_02.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "f1",
+    "page": "Constructor Performance",
+    "file": "assets/screenshots/reference/f1_03.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "f1",
+    "page": "Circuit Intelligence",
+    "file": "assets/screenshots/reference/f1_04.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "f1",
+    "page": "Strategy Evidence",
+    "file": "assets/screenshots/reference/f1_05.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "f1",
+    "page": "Pit Stop Performance",
+    "file": "assets/screenshots/reference/f1_06.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "f1",
+    "page": "Qualifying vs Race Execution",
+    "file": "assets/screenshots/reference/f1_07.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  },
+  {
+    "domain": "f1",
+    "page": "Strategy Lab",
+    "file": "assets/screenshots/reference/f1_08.png",
+    "kind": "PYTHON_REFERENCE_PREVIEW_NOT_POWER_BI_SCREENSHOT"
+  }
+]

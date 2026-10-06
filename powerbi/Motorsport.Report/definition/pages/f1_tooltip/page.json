@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "f1_tooltip",
+  "displayName": "Tooltip detail",
+  "displayOption": "FitToPage",
+  "width": 600,
+  "height": 360,
+  "type": "Tooltip",
+  "visibility": "HiddenInViewMode",
+  "pageBinding": {
+    "name": "f1_tooltip_binding",
+    "type": "Tooltip",
+    "parameters": [
+      {
+        "name": "f1_tooltip_context",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimDriver"
+              }
+            },
+            "Property": "Driver"
+          }
+        },
+        "boundFilter": "f1_tooltip_filter"
+      }
+    ]
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f1_tooltip_filter",
+        "type": "Categorical",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimDriver"
+              }
+            },
+            "Property": "Driver"
+          }
+        },
+        "howCreated": "User"
+      }
+    ]
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#101925'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

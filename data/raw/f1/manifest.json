@@ -1,0 +1,818 @@
+{
+  "2023_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:18:00.882475+00:00",
+    "sha256": "42fe66dbce2fc33bc239ce48dcd49c95cd7dbd941c995b72bd0a3a55cca349da",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_results_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/results.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:18:08.686766+00:00",
+    "sha256": "5e6f81c17930f39b2299ab1a1c53c812e5e45a7e2e96ce5afa1e87ed18894331",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_results_offset100.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/results.json?limit=100&offset=100",
+    "retrieved_utc": "2026-10-06T01:18:16.701023+00:00",
+    "sha256": "68539be47d187c9c82702edfadffb21202cd1ef993cdd5d70135dee255f453a7",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_results_offset200.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/results.json?limit=100&offset=200",
+    "retrieved_utc": "2026-10-06T01:18:24.739814+00:00",
+    "sha256": "688e4354c920861b92c1600a2ce5ec0b843ed99abb531ad35b2e5b44b3e1e8da",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_results_offset300.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/results.json?limit=100&offset=300",
+    "retrieved_utc": "2026-10-06T01:18:32.625886+00:00",
+    "sha256": "6aa59c94786bef9bc72e800606b31d981d8520bda8724e9c4a5e1e69ebed28e6",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_results_offset400.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/results.json?limit=100&offset=400",
+    "retrieved_utc": "2026-10-06T01:18:40.619779+00:00",
+    "sha256": "a5ad12f686184d9c9c0b70ffe61b008cabdeae74d63e7b8c3bbcf636ec312c52",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_qualifying_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/qualifying.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:18:48.712091+00:00",
+    "sha256": "867dba63cdd573ea62be7aea46962cf804bbe3ac2859a92646e528c7757af28c",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_qualifying_offset100.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/qualifying.json?limit=100&offset=100",
+    "retrieved_utc": "2026-10-06T01:18:56.728328+00:00",
+    "sha256": "1600002eecdf8e9ea05479279c3a4399ad4f375c9be36246657ba547eaaaf9cd",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_qualifying_offset200.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/qualifying.json?limit=100&offset=200",
+    "retrieved_utc": "2026-10-06T01:19:04.643160+00:00",
+    "sha256": "2f44ce121ce4af042cbb05173f31bf5615da4d01304275233c61e30929393fb8",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_qualifying_offset300.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/qualifying.json?limit=100&offset=300",
+    "retrieved_utc": "2026-10-06T01:19:12.649355+00:00",
+    "sha256": "21879b1bede76a73517a5bc264fd267e6384492c4e820e61c31211c3edf43366",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_qualifying_offset400.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/qualifying.json?limit=100&offset=400",
+    "retrieved_utc": "2026-10-06T01:19:20.728195+00:00",
+    "sha256": "9adbbb00fad579de061908d9f5bea5daacc432191c97627625fe8f7a3833f77c",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_sprint_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/sprint.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:19:28.933204+00:00",
+    "sha256": "fbd0db66748ee8f65a98d3689fa2949e5d2ad7f8cc0bf616f5c5e61cc5a23ad5",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_sprint_offset100.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/sprint.json?limit=100&offset=100",
+    "retrieved_utc": "2026-10-06T01:19:36.944808+00:00",
+    "sha256": "82ae7576f3839d0d5a493d2b65e51ef7708303ef13bdb3bd6293d4a9a74bbc7a",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_1_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/1/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:19:44.902386+00:00",
+    "sha256": "562552f7e0ca3fedee3f3f9f8be55916d1c754f08c7549de710b96897662c0ea",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_2_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/2/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:19:52.908396+00:00",
+    "sha256": "e104116d10a991a0b9c1f389750dac7ca03ac934339120b2011738ed1fe6460c",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_3_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/3/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:20:01.970701+00:00",
+    "sha256": "b382739d42a16b07ad676775f60c5c6f4b72fb8e28635687c5787f38e047aa4c",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_4_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/4/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:20:08.848283+00:00",
+    "sha256": "c47ddb38c36ff8ccd0187f1673e052d7b3bf3cc52d7eadd383c68363b3142554",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_5_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/5/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:20:16.886101+00:00",
+    "sha256": "50781fa039de217407cc5d84bd3a7e7a9c8b61757b5a84969d8459e2ae865ba3",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_6_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/6/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:20:24.923187+00:00",
+    "sha256": "5fa809be18883807fe2dc13cec1ca0fa9c86cd7a916a78bfcf60014ea2c152af",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_7_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/7/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:20:32.338836+00:00",
+    "sha256": "0b564f052aa822470524d2c32ca71228ad2651bd993101a41b9df6b232296944",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_8_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/8/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:20:41.023260+00:00",
+    "sha256": "387c550e9d30368d1fbe90d4f7ce6d8ee5d1a675bf8a092aa76aa16624d745d4",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_9_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/9/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:20:48.948278+00:00",
+    "sha256": "49060db81780d5474e303e6eef8c7b3abd4c32a43c19b8b48a6d18abaa2843e6",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_10_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/10/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:20:56.914107+00:00",
+    "sha256": "39dbc2bec6ac9d552c721c2705d213edd8361ab28a8d36bdbfa1824922440cde",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_11_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/11/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:21:04.821390+00:00",
+    "sha256": "1124c10572ff281ed612c8720d2b51215038dd32c610c706b983a351d4493c6b",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_12_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/12/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:21:13.151827+00:00",
+    "sha256": "a46b86dc92af7dfff00596d1f612b401f52590fb875d337d42e600b73a73c4b1",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_13_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/13/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:21:20.966209+00:00",
+    "sha256": "1ffb2638f4b539679e6e8c22c2586cfde923d8305a5fdefd9c5cb5db0c210d0c",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_13_pitstops_offset100.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/13/pitstops.json?limit=100&offset=100",
+    "retrieved_utc": "2026-10-06T01:21:28.878079+00:00",
+    "sha256": "16b68655c16e30a73e07d8a48d71169703b75b766161a4136cf4fba65155c6d4",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_14_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/14/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:21:36.825747+00:00",
+    "sha256": "88135eab8dcea7477c1c4423eeb29e83a4c686c06a885b13b1e8bdebc7e5104d",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_15_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/15/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:21:44.854073+00:00",
+    "sha256": "daa233db12d37fef79437860f166623aa9c1306218a261fe9d5464276f853002",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_16_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/16/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:21:52.972130+00:00",
+    "sha256": "83b36e3882150cea48373263fa7aba52e76402191d5cbf35276d9907d0e8d216",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_17_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/17/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:22:00.867176+00:00",
+    "sha256": "fa5aefe6d831ba7b3aa250e6ba38aeb8858ffd246f934e785a9c765857630580",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_18_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/18/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:22:08.851091+00:00",
+    "sha256": "10e2539ab0d9eb4e946fa8ba4574db6ed73e826b2fe427e477fba56bfa26118b",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_19_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/19/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:22:16.954585+00:00",
+    "sha256": "f68d29a7b896e8359682903048477090ce1ca1798466ffd5229aebbb84dfd3fc",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_20_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/20/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:22:24.973603+00:00",
+    "sha256": "96a83fd4bba0c9529e4feb874599df9a0a5e83848b3ffd2a6dab43b8e35d3838",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_21_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/21/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:22:32.854848+00:00",
+    "sha256": "3e710064380155f24255ca329e481dbb673da724eba4627a029b7d781098785e",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_22_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/22/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:22:41.040520+00:00",
+    "sha256": "8358d3c3fa5baac832c0384edc338c67970aa2a361a9d5758e1ae09ab8b810f7",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_driverstandings_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/driverstandings.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:22:48.982300+00:00",
+    "sha256": "9a727b3b65ea77d096cf00ac949b6ef0e904d77db41c441485bbba8cf91cddc7",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2023_constructorstandings_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2023/constructorstandings.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:22:56.895399+00:00",
+    "sha256": "9e869bfa0f8ecf5037a0eac3df78d8a724252e8b91345e58800d2a85521c47e1",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:23:04.745303+00:00",
+    "sha256": "af39c90da3884b650c8801486b52845b3e5b702f604301c48924f01194f6bad8",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_results_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/results.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:23:12.765306+00:00",
+    "sha256": "6c07da26be583139307386258d0631055a7221e5feb818ebd88fd4967313e830",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_results_offset100.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/results.json?limit=100&offset=100",
+    "retrieved_utc": "2026-10-06T01:23:20.769395+00:00",
+    "sha256": "9d17fb97fb8e323eec8b5bf273e3c9350dcadaf69ffdeeca52ed7d229afccd36",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_results_offset200.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/results.json?limit=100&offset=200",
+    "retrieved_utc": "2026-10-06T01:23:28.858150+00:00",
+    "sha256": "17c46d472c5cb3e9451359f209fcce858ec69d7f1b5a8b2e5a61bdfc2647343c",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_results_offset300.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/results.json?limit=100&offset=300",
+    "retrieved_utc": "2026-10-06T01:23:36.779499+00:00",
+    "sha256": "5ed77756d5d0e8073dcd0128b40676d703d2c5d69dabdae8ff5e9eb24d0bdd10",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_results_offset400.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/results.json?limit=100&offset=400",
+    "retrieved_utc": "2026-10-06T01:23:44.768479+00:00",
+    "sha256": "43291c0e87e210d3b3672f7d7d3963029077843f6bafe21a7532c5011a806bce",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_qualifying_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/qualifying.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:23:52.861055+00:00",
+    "sha256": "284922dba2d783fa8f17efca2dd48b1f0894934774b334b2034491eedcdbfbea",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_qualifying_offset100.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/qualifying.json?limit=100&offset=100",
+    "retrieved_utc": "2026-10-06T01:24:00.769202+00:00",
+    "sha256": "ab41e3700682e5637a89e499af75237662dd058120fe104949b1168b14fd48dc",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_qualifying_offset200.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/qualifying.json?limit=100&offset=200",
+    "retrieved_utc": "2026-10-06T01:24:08.224188+00:00",
+    "sha256": "e47b9ce142772bbe5dc13646b5f932d6cf57bd64f5b6e89780c54f63536d0b73",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_qualifying_offset300.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/qualifying.json?limit=100&offset=300",
+    "retrieved_utc": "2026-10-06T01:24:16.811374+00:00",
+    "sha256": "84c19cec48e32132210344b8989052f662cb75430c05ac3bf41e77953e23e44e",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_qualifying_offset400.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/qualifying.json?limit=100&offset=400",
+    "retrieved_utc": "2026-10-06T01:24:24.793159+00:00",
+    "sha256": "9173f5f8e3213ea490275159672a8b06e688fcc59f2b7303db92a1945d5965a7",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_sprint_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/sprint.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:24:33.188101+00:00",
+    "sha256": "5965ecc137cfbd86ea7a1998cbc0708cbacdb4d986194d2cd71e69d5105b7550",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_sprint_offset100.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/sprint.json?limit=100&offset=100",
+    "retrieved_utc": "2026-10-06T01:24:41.073196+00:00",
+    "sha256": "a73d091d0fa08e0abdbe48f5e40b4fa74560b272e4c7f0c783cf23da7b5373e0",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:24:49.073127+00:00",
+    "sha256": "16ba9a0e8a4d25731a489f353763874989ed4680365f02d80ecc2259a04541ff",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_2_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/2/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:24:56.919895+00:00",
+    "sha256": "d2cf24ff04cfefd2e9b5c77ba6fc47c26b0567887336a60a38baff46bb90b5c0",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_3_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/3/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:25:05.029522+00:00",
+    "sha256": "5f7d795ff4d4c0ea020e62e1c57786ac111fc1cdc360e04c2ed7b93592284a05",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_4_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/4/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:25:13.077260+00:00",
+    "sha256": "1215955beeb9346b855cc52b5328b9489346268853565f71f950c73e5515d581",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_5_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/5/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:25:21.049784+00:00",
+    "sha256": "9ced1cd4b67bd84d151ca05b33eb6cc232933152afa24ee6dc6535c2990dde31",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_6_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/6/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:25:28.947790+00:00",
+    "sha256": "b5dcbcaa0baf6d01779822dc794cbe93af26a3d0790236bbb4a3fc20820d3e9e",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_7_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/7/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:25:37.051246+00:00",
+    "sha256": "9ee0d5eccad6b3755c9dfbd06144b1d44c59733a5feefa4a3a8f90c73d4031bd",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:25:45.039092+00:00",
+    "sha256": "8147a480e3464f51adefe75f203991b6e04d950ebfbf0a1a58c8c2464c0a5b53",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_9_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/9/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:25:52.998790+00:00",
+    "sha256": "710d8758858acfebe3a7ce496eaf1caf62fbdcf609397e821c1be8bc1835f98a",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_10_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/10/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:26:01.106776+00:00",
+    "sha256": "4747d510e531fe6e1520546695aaee729dca561b9d392f96d0063ffcf3c8adad",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_11_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/11/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:26:09.094196+00:00",
+    "sha256": "f506ea54b0f3d670cb48d504681c24a53345c827d11005489789fdabe436b60b",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_12_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/12/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:26:17.200278+00:00",
+    "sha256": "51923f182499ada679d2323adef56fb8d65912a442ab33ae6af82fe648e9e0fe",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_13_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/13/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:26:25.125748+00:00",
+    "sha256": "8f02d9c9cf952253e502140e37a57517a469a2ee6ea4d472b7c8cbc28dbd2fa6",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_14_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/14/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:26:32.450138+00:00",
+    "sha256": "c9f4a3d736f3c46132ac06fc6c7f02722b4dc15f99357d8868821b0aa513625a",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_15_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/15/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:26:41.002989+00:00",
+    "sha256": "887936375b31c0bb9b16fb32a3e02f23ee3bac40e44f26f30c7c1624551af7f6",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_16_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/16/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:26:49.082065+00:00",
+    "sha256": "ced8a4b84da6e7d30870312be69495b95b5422e71a660d9c087e4d7287e46c4c",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_17_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/17/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:26:57.156356+00:00",
+    "sha256": "ca488862a2f26a7b5a62acb4bcd6e1438c776294309acae6e6c33447a259547b",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_18_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/18/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:27:05.001549+00:00",
+    "sha256": "8e3fca59cdbb856352b642ab7c4d2f9df63f87e53cd605d91bbd051ad4b2789c",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_19_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/19/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:27:13.112089+00:00",
+    "sha256": "08c434c8f6d8b28a0503ec81ad99d47159dc968f7a7e317476c58fa526b6522d",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_20_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/20/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:27:21.110488+00:00",
+    "sha256": "9cdd614cf6dd00630bb31b955982c06ef0a3a2a7e78397c5921fb993ee5c3852",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_21_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/21/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:27:29.031139+00:00",
+    "sha256": "3c52dd8e2e5c6210ed58ef1c251dd0d14767a6aac537f4bce440583a9de1c532",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_22_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/22/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:27:37.036271+00:00",
+    "sha256": "7744baea9ada633f1b1742eb7a3ae8a650f305663937d045bc00dc3d24648c46",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_23_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/23/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:27:45.249267+00:00",
+    "sha256": "dbeb698f7fb7afc86e4e3673da67ff6eb1fecbfe6039ea7b64f6cce9293db7a4",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_24_pitstops_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/24/pitstops.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:27:53.144266+00:00",
+    "sha256": "d647d487e1ea2a1dd8a3198c2b628a72612120d7de7d7402ff345c49ee27dd54",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_driverstandings_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/driverstandings.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:28:01.057702+00:00",
+    "sha256": "9be4a1cae2bb8900d2b5713d4cfcb294ef7082f522e2082a00836e1865ccdaad",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_constructorstandings_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/constructorstandings.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:28:09.006909+00:00",
+    "sha256": "d583166ad5e0de965522995488119808a6f95698826933bce32ba04fae0803ab",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_laps_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/laps.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:28:17.336967+00:00",
+    "sha256": "59dc6852662bc4a25bf111bc084cf835a9a19e79537a514189359d356b1451f8",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_laps_offset100.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/laps.json?limit=100&offset=100",
+    "retrieved_utc": "2026-10-06T01:28:25.256222+00:00",
+    "sha256": "17db8ecec28d32cc2453054932554f97025a1bb63bcb864253464030dc0b7aff",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_laps_offset200.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/laps.json?limit=100&offset=200",
+    "retrieved_utc": "2026-10-06T01:28:33.150414+00:00",
+    "sha256": "35e9245805d464f7444370ed3aa5dbdd65dda56451ddb0a7a5ac0ad2868f4688",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_laps_offset300.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/laps.json?limit=100&offset=300",
+    "retrieved_utc": "2026-10-06T01:28:41.267877+00:00",
+    "sha256": "cc62e58ba22c0b3a26e4c3aaa9b25c8653dd5055230ce7c4e2eca050d5ec5ad2",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_laps_offset400.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/laps.json?limit=100&offset=400",
+    "retrieved_utc": "2026-10-06T01:28:49.196304+00:00",
+    "sha256": "224cdf9b2d2e088196dcb731247c360efe0452f1c9da9b11c9e3a560495f1219",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_laps_offset500.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/laps.json?limit=100&offset=500",
+    "retrieved_utc": "2026-10-06T01:28:57.290610+00:00",
+    "sha256": "40952a1c2bd787569cbb1b9f90bf8e8069f7d36203f08095c599cd867e067e52",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_laps_offset600.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/laps.json?limit=100&offset=600",
+    "retrieved_utc": "2026-10-06T01:29:05.270670+00:00",
+    "sha256": "f648bf4adbebc6237d326e946ccee924552c3cb5e5c1c8add916fcbf4b80b400",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_laps_offset700.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/laps.json?limit=100&offset=700",
+    "retrieved_utc": "2026-10-06T01:29:13.345890+00:00",
+    "sha256": "0c9e9ff516d5d2e34488366201b95096603c614b1e35de5ce65aefb9c4790ddb",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_laps_offset800.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/laps.json?limit=100&offset=800",
+    "retrieved_utc": "2026-10-06T01:29:21.343656+00:00",
+    "sha256": "01b192cb29e00384294191c8c3ad3c7c604ced854e5c2c7cd68361f3562318b0",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_laps_offset900.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/laps.json?limit=100&offset=900",
+    "retrieved_utc": "2026-10-06T01:29:29.327721+00:00",
+    "sha256": "03c957bf4d3c55156bf61283d94f869cdbc0a0442d58889c3452a8a9f485cebd",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_laps_offset1000.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/laps.json?limit=100&offset=1000",
+    "retrieved_utc": "2026-10-06T01:29:37.229914+00:00",
+    "sha256": "03125837f16c0f587e36db407bc4f775441da6019678e2ee60f4cb71eef6f5d2",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_1_laps_offset1100.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/1/laps.json?limit=100&offset=1100",
+    "retrieved_utc": "2026-10-06T01:29:45.271588+00:00",
+    "sha256": "9db8276da9ddb8df8df22a5e88384a3aae5a7b77882367d98aaa0ca1b471e22e",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset0.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=0",
+    "retrieved_utc": "2026-10-06T01:29:53.293592+00:00",
+    "sha256": "585a447910a242ea3f1af268fd70a0509dae6c06a08fe02b9c89585f8b62cd4d",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset100.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=100",
+    "retrieved_utc": "2026-10-06T01:30:01.377819+00:00",
+    "sha256": "252efd233a2e9b6d8a722c5a980c1adfa1e30f7c920f816f418058e9a90c1ee2",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset200.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=200",
+    "retrieved_utc": "2026-10-06T01:30:10.137214+00:00",
+    "sha256": "0cd1d43a594f32d14169a450010ac5a72e98c84a573b11a87fb8b5bebb8809ca",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset300.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=300",
+    "retrieved_utc": "2026-10-06T01:30:17.455318+00:00",
+    "sha256": "3fc14a23d553e299a267a3309ca703bc540b2e3d53bcbfa8287162b79a25b970",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset400.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=400",
+    "retrieved_utc": "2026-10-06T01:30:25.472233+00:00",
+    "sha256": "b53d35a64a9f694c0aeff3aaf3c9bdb261c379ef134c81fb324f8db64877d7d0",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset500.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=500",
+    "retrieved_utc": "2026-10-06T01:30:33.419852+00:00",
+    "sha256": "02409c9abc354f8494557f1ee10d66ec7f743155a43fb6567f2400c645ccbbd6",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset600.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=600",
+    "retrieved_utc": "2026-10-06T01:30:41.428983+00:00",
+    "sha256": "8524795c4a287449705beb76bdbd5607616869c2cb438d57c56a30b08aa12763",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset700.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=700",
+    "retrieved_utc": "2026-10-06T01:30:49.623491+00:00",
+    "sha256": "a1c2343a9d7fa9b0352af7670eb5414019cca2769d71362b5fe5f804057623e7",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset800.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=800",
+    "retrieved_utc": "2026-10-06T01:30:57.385982+00:00",
+    "sha256": "1cfa0c656ed784ea58e2c2ed4ea626eeb931aca7c5fbe6aa3d79014a27480f6b",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset900.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=900",
+    "retrieved_utc": "2026-10-06T01:31:05.410591+00:00",
+    "sha256": "795ce05b946d7ada501d619bf9bd4247fe2ff223ead402e180f35f9e805888ce",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset1000.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=1000",
+    "retrieved_utc": "2026-10-06T01:31:13.538420+00:00",
+    "sha256": "55b811c2a5027ee68d7a58c9b04d4ab7d36e9baf457ead0cfbc53ca043052d9a",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset1100.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=1100",
+    "retrieved_utc": "2026-10-06T01:31:21.511407+00:00",
+    "sha256": "9032a18260d01ed84d24b492da1b082130f89238a9f0b95a9cadeb4b97138983",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  },
+  "2024_8_laps_offset1200.json": {
+    "url": "https://api.jolpi.ca/ergast/f1/2024/8/laps.json?limit=100&offset=1200",
+    "retrieved_utc": "2026-10-06T01:31:29.430995+00:00",
+    "sha256": "ff14e7fa150dfb7a025c0771cc4368349f2e7f0862652cbe633bdd0adff059ef",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": "Jolpica-F1 / Ergast",
+    "data_class": "PUBLIC"
+  }
+}

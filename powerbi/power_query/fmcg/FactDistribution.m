@@ -1,0 +1,1 @@
+fnLoadCsv("fmcg/FactDistribution.csv",{{"Date",type date},{"ProductKey",Int64.Type},{"CategoryKey",Int64.Type},{"CustomerKey",Int64.Type},{"ChannelKey",Int64.Type},{"RegionKey",Int64.Type},{"DataClass",type text},{"ActiveStoreDays",Int64.Type},{"EligibleStoreDays",Int64.Type}},{"Date","ProductKey","CustomerKey"},{},{"SYNTHETIC"})

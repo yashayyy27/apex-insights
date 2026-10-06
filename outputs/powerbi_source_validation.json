@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "schema_files_validated": 409,
+  "field_bindings_checked": 332,
+  "errors": [],
+  "desktop_open": "NOT_TESTED",
+  "dax_execution": "NOT_TESTED",
+  "m_refresh": "NOT_TESTED",
+  "interactions": "NOT_TESTED"
+}

@@ -1,0 +1,154 @@
+{
+  "data/processed/analytics/ActionCentre.csv": {
+    "sha256": "e00892ff2d02064627a22f085e6bd99dae5c07aba11e1947860f0c53ebfc3432",
+    "bytes": 2095
+  },
+  "data/processed/analytics/category_performance.csv": {
+    "sha256": "bf09e3059cf6c17a798b5db0c530a1957f2b4fa0220b3ce26eef45c2a32f6e15",
+    "bytes": 1924
+  },
+  "data/processed/analytics/channel_performance.csv": {
+    "sha256": "46f1c74b68de8c22fd2b2388e4a31f3e4c7434de67cb55f0afffdbad876b4997",
+    "bytes": 3811
+  },
+  "data/processed/analytics/driver_intelligence.csv": {
+    "sha256": "8ae89f5d8a45d499cf0301538b0b0aec9181112aa484036ab75e396209ab6f3b",
+    "bytes": 5366
+  },
+  "data/processed/analytics/gp_points_progression.csv": {
+    "sha256": "4e9c6f6326f33ea08e249bb1683e977566814b52c25a9966dda7e9b7e2d6a594",
+    "bytes": 65657
+  },
+  "data/processed/analytics/innovation_review.csv": {
+    "sha256": "3d7b35344a908f21cd207e70c65022fa6286e3e6f3dfb0f7b7a8f6eee4da64ba",
+    "bytes": 439
+  },
+  "data/processed/analytics/management_monthly.csv": {
+    "sha256": "9dad332534cbf02a36a1b4bbb25b8d03810c1bc809763d6fad4fef1e17259fd2",
+    "bytes": 146260
+  },
+  "data/processed/analytics/pit_consistency.csv": {
+    "sha256": "bfd66fab8b553722af97a2fe26b0044647557893fad9b1b4ee71da4f3c61dc82",
+    "bytes": 1965
+  },
+  "data/processed/analytics/promotion_evaluation.csv": {
+    "sha256": "d1e21860229abfb72d8ad5c3db4a4297124ae5bfda50e8b373e30b661ce8f54a",
+    "bytes": 1039899
+  },
+  "data/processed/analytics/revenue_bridge.csv": {
+    "sha256": "454a2c40b6233133f391c971119aec5a3924a42bb95f292880b7ad94d3df70e3",
+    "bytes": 29163
+  },
+  "data/processed/analytics/sku_productivity.csv": {
+    "sha256": "d813d851c1114663a1a1e95e557fc20c9c4807867009feae6af639b78de649a0",
+    "bytes": 8534
+  },
+  "data/processed/analytics/teammate_comparison.csv": {
+    "sha256": "e730311befb463c782b36ede6bdcbc32e680d84bd91fcd4b4bc88bcfd68ccce0",
+    "bytes": 2729
+  },
+  "data/processed/f1/DimCircuit.csv": {
+    "sha256": "2e836c467aa17d7cb3dc35914e95590f5d185aaea2c51df62ce46089c05d7977",
+    "bytes": 1909
+  },
+  "data/processed/f1/DimConstructor.csv": {
+    "sha256": "0814278db378876c151e6c4253325b93d90eb1e5b87a5176700123445bd1fec4",
+    "bytes": 443
+  },
+  "data/processed/f1/DimDate.csv": {
+    "sha256": "6ca9cff2a2185ce2c19fb7353da7f6b2dbd2537b86c8297a7330cd8ea66a0912",
+    "bytes": 43379
+  },
+  "data/processed/f1/DimDriver.csv": {
+    "sha256": "b8393abecf6c20182096166da8b9347610fe7fb334c4e6c2f6437d8f843194ad",
+    "bytes": 1272
+  },
+  "data/processed/f1/DimRace.csv": {
+    "sha256": "f9de25265493a8ab489486a3e245b75a108723e37c52c42749bfb1fa01c204a5",
+    "bytes": 2898
+  },
+  "data/processed/f1/DimSeason.csv": {
+    "sha256": "6a6be58a0740693a36e8cc6251767494bfd8d94aad10823670585e2f58c70b66",
+    "bytes": 41
+  },
+  "data/processed/f1/FactConstructorStandings.csv": {
+    "sha256": "429a487e4f6fc112ec43d2bc4389bcddabfe4de96bd2b8f3dc9adad82458411b",
+    "bytes": 747
+  },
+  "data/processed/f1/FactDriverStandings.csv": {
+    "sha256": "a3bb05220963956266324ca1f2f5ecf670352ca8c95fe3fee50f15cd84458054",
+    "bytes": 1651
+  },
+  "data/processed/f1/FactLaps.csv": {
+    "sha256": "472fea33276bef916643a4a8ea5dc558bac4f00190f89fbcb65577e74e4303ac",
+    "bytes": 126243
+  },
+  "data/processed/f1/FactPitStops.csv": {
+    "sha256": "16c748b8f3a8dcb53acb5200df3bfaf12dfa9d8cb0cf0ff7fec8d8bb5608d6a8",
+    "bytes": 132544
+  },
+  "data/processed/f1/FactQualifying.csv": {
+    "sha256": "69e8116da518f3f0dffbb444dacfd956001ef0c072a08bbbebe6b6fab85cc4ed",
+    "bytes": 58900
+  },
+  "data/processed/f1/FactRaceResults.csv": {
+    "sha256": "3778ba4d8065f0b7240350242f7d9eda2adeb51bf3eb886c46ebb474aae67feb",
+    "bytes": 68382
+  },
+  "data/processed/f1/FactSprintResults.csv": {
+    "sha256": "adcbedeb0c5f22c42411ba4ae586d92d3d9d388f9888dbd9bb5e2f084ff1d7f0",
+    "bytes": 18141
+  },
+  "data/processed/fmcg/DimCategory.csv": {
+    "sha256": "6e43b4478da8367771c2bac1b5c32b9492d681d07a4ac2f080af83e46607c93a",
+    "bytes": 128
+  },
+  "data/processed/fmcg/DimChannel.csv": {
+    "sha256": "dfb11b14fc0014c278976fd74e5504acf038bc398bf5bd2c78b4329524066e4e",
+    "bytes": 147
+  },
+  "data/processed/fmcg/DimCustomer.csv": {
+    "sha256": "b1e83dc5c6cbcb8577d339591cd67387360f19005b14c3febdd952813b8ea784",
+    "bytes": 706
+  },
+  "data/processed/fmcg/DimDate.csv": {
+    "sha256": "64fe0c744f9089641c634bf4bd50a8a3ba0508225bc2c7abb5ed7a42f0f24e7d",
+    "bytes": 39724
+  },
+  "data/processed/fmcg/DimProduct.csv": {
+    "sha256": "18227ed18fb1b42b946c1fcdf3bfad61fc5f9cf04658aab8df2415e86c84f8b4",
+    "bytes": 2281
+  },
+  "data/processed/fmcg/DimRegion.csv": {
+    "sha256": "12b15ca09ee804ed75e8d8d64595bbf6bc1528ed1dbbc08c364b70667bf6bf7e",
+    "bytes": 75
+  },
+  "data/processed/fmcg/FactDistribution.csv": {
+    "sha256": "09bcb8e0bec85aae16a49216c2a253aae200f629a5d086232c92c803d0ec3aac",
+    "bytes": 9523027
+  },
+  "data/processed/fmcg/FactInnovationPanel.csv": {
+    "sha256": "1eea017abf9b37f064157eb3914031424bdf1e2b3b8eee643d2c6efc04cfa759",
+    "bytes": 34261
+  },
+  "data/processed/fmcg/FactMarket.csv": {
+    "sha256": "e63b1ea57e0444d835dbeb88ac63cf9228aa784237c719b004a950b3dfa6df1b",
+    "bytes": 3503304
+  },
+  "data/processed/fmcg/FactPromotion.csv": {
+    "sha256": "455eddec9df596bf0c0f41f21abf212eae632b701d65e4c06d72bfe7c6e4482b",
+    "bytes": 3855137
+  },
+  "data/processed/fmcg/FactSales.csv": {
+    "sha256": "0775a24264e7aad84665a09c74f47ecfce62b7d150d8557c2b879fdb49a22619",
+    "bytes": 29548909
+  },
+  "data/processed/fmcg/FactTargets.csv": {
+    "sha256": "09ea226dc7663dca224cfb643a9808f0c706cef43b692cbc93317db59323530d",
+    "bytes": 11618075
+  },
+  "data/processed/public/PublicContext.csv": {
+    "sha256": "4c8df22b82b954bc5c1a2019ea6408f8476fe12372d0d79078f32de1f2e33bc2",
+    "bytes": 556
+  }
+}

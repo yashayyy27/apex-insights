@@ -1,0 +1,1 @@
+fnLoadCsv("analytics/ActionCentre.csv",{{"ActionKey",Int64.Type},{"CategoryKey",Int64.Type},{"Scope",type text},{"Observation",type text},{"Driver",type text},{"Implication",type text},{"Action",type text},{"Monitor",type text},{"Evidence",type text},{"DataClass",type text}},{"ActionKey"},{},{"SYNTHETIC_DERIVED"})

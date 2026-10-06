@@ -1,0 +1,1 @@
+fnLoadCsv("f1/DimCircuit.csv",{{"CircuitKey",type text},{"Circuit",type text},{"Country",type text},{"Locality",type text},{"Latitude",type number},{"Longitude",type number},{"DataClass",type text}},{"CircuitKey"},{},{"PUBLIC","PUBLIC_DERIVED"})

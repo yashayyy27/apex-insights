@@ -1,0 +1,1 @@
+fnLoadCsv("public/PublicContext.csv",{{"Metric",type text},{"Value",type number},{"Basis",type text},{"Scope",type text},{"SourceURL",type text},{"PublishedDate",type date},{"DataClass",type text}},{"Metric"},{},{"PUBLIC","PUBLIC_DERIVED"})

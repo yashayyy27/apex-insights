@@ -1,0 +1,2 @@
+EVALUATE
+SUMMARIZECOLUMNS(DimSeason[Season],"Recorded",[Total Recorded Points],"OfficialDriver",[Official Driver Points],"OfficialConstructor",[Official Constructor Points])

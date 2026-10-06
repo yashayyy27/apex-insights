@@ -1,0 +1,114 @@
+[
+  {
+    "domain": "fmcg",
+    "page": "Executive Performance",
+    "question": "What happened?",
+    "visuals": 25,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Category Performance",
+    "question": "Where is performance changing?",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Customer and Channel",
+    "question": "Where should commercial teams focus?",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Range and SKU Productivity",
+    "question": "Which products deserve attention?",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Promotion and Pricing",
+    "question": "Which promotions create profitable growth?",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Innovation Performance",
+    "question": "Which launches are working?",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Opportunity Finder",
+    "question": "Why did performance change?",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "fmcg",
+    "page": "Executive Action Centre",
+    "question": "What should we test next?",
+    "visuals": 16,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "f1",
+    "page": "Championship Command Centre",
+    "question": "How did the championship develop?",
+    "visuals": 25,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "f1",
+    "page": "Driver Intelligence",
+    "question": "Who converts opportunity into results?",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "f1",
+    "page": "Constructor Performance",
+    "question": "Where do points and non-finishes concentrate?",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "f1",
+    "page": "Circuit Intelligence",
+    "question": "Where do observed results differ?",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "f1",
+    "page": "Strategy Evidence",
+    "question": "Observed pit windows; no compound telemetry",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "f1",
+    "page": "Pit Stop Performance",
+    "question": "How consistent are recorded pit durations?",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "f1",
+    "page": "Qualifying vs Race Execution",
+    "question": "Who improves relative to their starting grid?",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  },
+  {
+    "domain": "f1",
+    "page": "Strategy Lab",
+    "question": "SIMULATION: explore assumption sensitivity",
+    "visuals": 23,
+    "status": "AUTHORED_SOURCE; Desktop runtime pending"
+  }
+]

@@ -1,0 +1,1 @@
+fnLoadCsv("fmcg/FactInnovationPanel.csv",{{"ProductKey",Int64.Type},{"CategoryKey",Int64.Type},{"CustomerKey",Int64.Type},{"ChannelKey",Int64.Type},{"RegionKey",Int64.Type},{"Trials",Int64.Type},{"RepeatWithin28d",Int64.Type},{"Date",type date},{"DataClass",type text}},{"Date","ProductKey","CustomerKey"},{},{"SYNTHETIC"})

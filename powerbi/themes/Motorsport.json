@@ -1,0 +1,25 @@
+{
+  "name": "APEX Motorsport",
+  "dataColors": [
+    "#51DAC8",
+    "#6485A0",
+    "#CBA36F",
+    "#8B739E",
+    "#618E85"
+  ],
+  "background": "#101925",
+  "foreground": "#EFF5FA",
+  "tableAccent": "#51DAC8",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI",
+      "fontSize": 14,
+      "color": "#EFF5FA"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 11,
+      "color": "#EFF5FA"
+    }
+  }
+}

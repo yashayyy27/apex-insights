@@ -1,0 +1,1740 @@
+{
+  "name": "Motorsport",
+  "compatibilityLevel": 1601,
+  "model": {
+    "culture": "en-AU",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-AU",
+    "tables": [
+      {
+        "name": "DimCircuit",
+        "columns": [
+          {
+            "name": "CircuitKey",
+            "dataType": "string",
+            "sourceColumn": "CircuitKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "6257e914-acef-59a7-9119-1ac7c5de0823"
+          },
+          {
+            "name": "Circuit",
+            "dataType": "string",
+            "sourceColumn": "Circuit",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "f34a052e-3121-52ac-b266-529cf5bce76f"
+          },
+          {
+            "name": "Country",
+            "dataType": "string",
+            "sourceColumn": "Country",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "47e25c23-a68c-52b9-9dbb-3bbb0dd7f540"
+          },
+          {
+            "name": "Locality",
+            "dataType": "string",
+            "sourceColumn": "Locality",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "0908b58c-e602-5630-990b-4a94aa5232a6"
+          },
+          {
+            "name": "Latitude",
+            "dataType": "double",
+            "sourceColumn": "Latitude",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "d611f4a9-13ed-5810-93d2-0f30b05b759d"
+          },
+          {
+            "name": "Longitude",
+            "dataType": "double",
+            "sourceColumn": "Longitude",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "ab7c6b0d-cb2e-50b2-8e4c-3156325deccc"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "cc86d077-7413-548c-80d7-5ed3dabcb567"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCircuit",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"f1/DimCircuit.csv\",{{\"CircuitKey\",type text},{\"Circuit\",type text},{\"Country\",type text},{\"Locality\",type text},{\"Latitude\",type number},{\"Longitude\",type number},{\"DataClass\",type text}},{\"CircuitKey\"},{},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "bff15b7d-38a9-52f0-a340-854a5a4b10af"
+      },
+      {
+        "name": "DimConstructor",
+        "columns": [
+          {
+            "name": "ConstructorKey",
+            "dataType": "string",
+            "sourceColumn": "ConstructorKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "1e359e7a-5477-5826-b786-a37a15fed0df"
+          },
+          {
+            "name": "Constructor",
+            "dataType": "string",
+            "sourceColumn": "Constructor",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "6a1e012c-471f-5918-812f-d5761fc5ec52"
+          },
+          {
+            "name": "Nationality",
+            "dataType": "string",
+            "sourceColumn": "Nationality",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "8285df16-b0fa-5af9-b3c2-4198d5640966"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "e432b890-413f-50df-a185-5268c7f02d95"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimConstructor",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"f1/DimConstructor.csv\",{{\"ConstructorKey\",type text},{\"Constructor\",type text},{\"Nationality\",type text},{\"DataClass\",type text}},{\"ConstructorKey\"},{},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "01ed0800-db57-5987-a5dd-5719eea3421b"
+      },
+      {
+        "name": "DimDate",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "isKey": true,
+            "lineageTag": "0e646498-edee-5e75-be2b-6d511f7cd794"
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "sourceColumn": "Year",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "0ccf9103-38f5-506d-a6b5-91db8d98a45e"
+          },
+          {
+            "name": "YearMonth",
+            "dataType": "string",
+            "sourceColumn": "YearMonth",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "eef4b127-9bc3-56f2-9100-a46431419fb2"
+          },
+          {
+            "name": "MonthNumber",
+            "dataType": "int64",
+            "sourceColumn": "MonthNumber",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "f8d9fb12-eaa1-5272-93d6-f35838af98f2"
+          },
+          {
+            "name": "Month",
+            "dataType": "string",
+            "sourceColumn": "Month",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "sortByColumn": "MonthNumber",
+            "lineageTag": "dbc33f0e-baae-56b2-88b2-87ea938360a3"
+          },
+          {
+            "name": "Quarter",
+            "dataType": "string",
+            "sourceColumn": "Quarter",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "e3fef426-92d8-53d3-be7a-54e08d3eb8df"
+          },
+          {
+            "name": "WeekStart",
+            "dataType": "dateTime",
+            "sourceColumn": "WeekStart",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "591aa761-b3e1-5177-81b5-b3f0dd9f8f5b"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "74f039d2-89da-5cb7-b172-e7cb9864b983"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimDate",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnCalendar(#date(2023,1,1),#date(2024,12,31),\"PUBLIC_DERIVED\")"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "dataCategory": "Time",
+        "lineageTag": "5baaa772-5929-5486-a922-299a711f30b5"
+      },
+      {
+        "name": "DimDriver",
+        "columns": [
+          {
+            "name": "DriverKey",
+            "dataType": "string",
+            "sourceColumn": "DriverKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "69b94737-d487-57d4-97c9-37649db2ec68"
+          },
+          {
+            "name": "Driver",
+            "dataType": "string",
+            "sourceColumn": "Driver",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "2ba58755-f198-5cee-ad82-1bbb9563dfa4"
+          },
+          {
+            "name": "Nationality",
+            "dataType": "string",
+            "sourceColumn": "Nationality",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "d26069ed-b0bc-5f21-82d5-9942746a8cf5"
+          },
+          {
+            "name": "DOB",
+            "dataType": "dateTime",
+            "sourceColumn": "DOB",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "1f1f5e39-2f1b-5515-9c72-6130b4edea77"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "9a5ca3c6-a67a-58bb-ae88-c9ab6bbff274"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimDriver",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"f1/DimDriver.csv\",{{\"DriverKey\",type text},{\"Driver\",type text},{\"Nationality\",type text},{\"DOB\",type date},{\"DataClass\",type text}},{\"DriverKey\"},{},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "325a52fa-ebc1-5050-86eb-7bc227643a33"
+      },
+      {
+        "name": "DimRace",
+        "columns": [
+          {
+            "name": "RaceKey",
+            "dataType": "int64",
+            "sourceColumn": "RaceKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "a6d10edc-a5ba-57a7-9ed3-3bef6759c981"
+          },
+          {
+            "name": "Season",
+            "dataType": "int64",
+            "sourceColumn": "Season",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "7bad65d6-34f4-5a6f-977e-d9af37d58bad"
+          },
+          {
+            "name": "Round",
+            "dataType": "int64",
+            "sourceColumn": "Round",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "dc3906c7-daec-58ae-aa56-45a0ef028875"
+          },
+          {
+            "name": "Race",
+            "dataType": "string",
+            "sourceColumn": "Race",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "5e579f80-20bc-5a8d-bf26-cc3cffdb5f9c"
+          },
+          {
+            "name": "CircuitKey",
+            "dataType": "string",
+            "sourceColumn": "CircuitKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "dd3663d8-7d5e-5a29-a0fa-08cca8d65f0a"
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "44731590-37f8-5324-a986-9a48579428fd"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "2ef5a0dc-ed45-50ae-ae65-5a4f28f08533"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimRace",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"f1/DimRace.csv\",{{\"RaceKey\",Int64.Type},{\"Season\",Int64.Type},{\"Round\",Int64.Type},{\"Race\",type text},{\"CircuitKey\",type text},{\"Date\",type date},{\"DataClass\",type text}},{\"RaceKey\"},{},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "177db1ec-7164-55ad-a1b9-7f613313ae31"
+      },
+      {
+        "name": "DimSeason",
+        "columns": [
+          {
+            "name": "Season",
+            "dataType": "int64",
+            "sourceColumn": "Season",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "84a9ae23-7d52-5dff-962a-1ba05ebffe8a"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "fc4e9bde-0529-5fda-8dbe-50a01fd70728"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimSeason",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"f1/DimSeason.csv\",{{\"Season\",Int64.Type},{\"DataClass\",type text}},{\"Season\"},{},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "2bce3f2f-eeba-5b81-9884-812b9157cb3e"
+      },
+      {
+        "name": "FactConstructorStandings",
+        "columns": [
+          {
+            "name": "Season",
+            "dataType": "int64",
+            "sourceColumn": "Season",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "488bebd8-c5f3-5582-91a7-824039c48212"
+          },
+          {
+            "name": "ConstructorKey",
+            "dataType": "string",
+            "sourceColumn": "ConstructorKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "32bfeb8f-ac24-5295-8de0-3462c6929e74"
+          },
+          {
+            "name": "Position",
+            "dataType": "int64",
+            "sourceColumn": "Position",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "4469e263-10c8-5949-9676-781bb3c9c54d"
+          },
+          {
+            "name": "Points",
+            "dataType": "double",
+            "sourceColumn": "Points",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "5c222b5d-3d3e-5093-90a9-eee74e3dea3a"
+          },
+          {
+            "name": "Wins",
+            "dataType": "int64",
+            "sourceColumn": "Wins",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "2f85be29-d270-5320-a4d0-08ac59f6b7d0"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "48dbe8fc-15e5-5aae-b795-ed28e29b7472"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactConstructorStandings",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"f1/FactConstructorStandings.csv\",{{\"Season\",Int64.Type},{\"ConstructorKey\",type text},{\"Position\",Int64.Type},{\"Points\",type number},{\"Wins\",Int64.Type},{\"DataClass\",type text}},{\"Season\",\"ConstructorKey\"},{},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "c75fd994-a61e-55f8-a33d-607bd1f4ffcd"
+      },
+      {
+        "name": "FactDriverStandings",
+        "columns": [
+          {
+            "name": "Season",
+            "dataType": "int64",
+            "sourceColumn": "Season",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "c18f06c0-1940-5538-995a-c9222fb264e5"
+          },
+          {
+            "name": "DriverKey",
+            "dataType": "string",
+            "sourceColumn": "DriverKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "245615ee-8c46-515b-b50f-875896763445"
+          },
+          {
+            "name": "Position",
+            "dataType": "int64",
+            "sourceColumn": "Position",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "e50db0dc-d1f8-54f0-80cd-0047d0403053"
+          },
+          {
+            "name": "Points",
+            "dataType": "double",
+            "sourceColumn": "Points",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "91ce84c5-aaa6-5314-99c6-2b20df1a7847"
+          },
+          {
+            "name": "Wins",
+            "dataType": "int64",
+            "sourceColumn": "Wins",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "ae949144-078f-5325-b0d0-021e15342208"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "09af0967-5bb7-56e0-94ed-761610e2b70e"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactDriverStandings",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"f1/FactDriverStandings.csv\",{{\"Season\",Int64.Type},{\"DriverKey\",type text},{\"Position\",Int64.Type},{\"Points\",type number},{\"Wins\",Int64.Type},{\"DataClass\",type text}},{\"Season\",\"DriverKey\"},{},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "1f24370e-de8f-54a8-ad89-4f1d0ce081eb"
+      },
+      {
+        "name": "FactLaps",
+        "columns": [
+          {
+            "name": "RaceKey",
+            "dataType": "int64",
+            "sourceColumn": "RaceKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "eb60aa54-8472-5a34-8edb-6919de753706"
+          },
+          {
+            "name": "DriverKey",
+            "dataType": "string",
+            "sourceColumn": "DriverKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "b8a56980-72c3-5d93-b4fb-e879cd294229"
+          },
+          {
+            "name": "Lap",
+            "dataType": "int64",
+            "sourceColumn": "Lap",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "0be3136b-14c4-5cb3-b360-df1862c80e58"
+          },
+          {
+            "name": "Position",
+            "dataType": "int64",
+            "sourceColumn": "Position",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "10211e93-60a7-541f-afc6-365e3b17ac12"
+          },
+          {
+            "name": "LapSeconds",
+            "dataType": "double",
+            "sourceColumn": "LapSeconds",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "23785f88-883b-5cf7-ba7e-ece47b27f193"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "751c8b63-2ff8-5aec-9a99-6465a444ea15"
+          },
+          {
+            "name": "ConstructorKey",
+            "dataType": "string",
+            "sourceColumn": "ConstructorKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "5e6e8278-23f0-53ab-bebe-635a0bbb7e80"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactLaps",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"f1/FactLaps.csv\",{{\"RaceKey\",Int64.Type},{\"DriverKey\",type text},{\"Lap\",Int64.Type},{\"Position\",Int64.Type},{\"LapSeconds\",type number},{\"DataClass\",type text},{\"ConstructorKey\",type text}},{\"RaceKey\",\"DriverKey\",\"Lap\"},{},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "ef1f05e2-181c-53b6-a820-780e051c3b11"
+      },
+      {
+        "name": "FactPitStops",
+        "columns": [
+          {
+            "name": "RaceKey",
+            "dataType": "int64",
+            "sourceColumn": "RaceKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "d338b390-a7a5-5bab-a1a1-1816142026e1"
+          },
+          {
+            "name": "DriverKey",
+            "dataType": "string",
+            "sourceColumn": "DriverKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "67938c93-7282-5382-b47d-68d78935d0ae"
+          },
+          {
+            "name": "Stop",
+            "dataType": "int64",
+            "sourceColumn": "Stop",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "2ecc2113-23ae-59ce-90c8-1791494998b0"
+          },
+          {
+            "name": "Lap",
+            "dataType": "int64",
+            "sourceColumn": "Lap",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "6daa2a04-93b0-5973-8af5-c9c668dcf7a9"
+          },
+          {
+            "name": "DurationSeconds",
+            "dataType": "double",
+            "sourceColumn": "DurationSeconds",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "95cacd72-09bc-5329-97fa-3d46f8e27ff0"
+          },
+          {
+            "name": "TimeOfDay",
+            "dataType": "string",
+            "sourceColumn": "TimeOfDay",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "a7d7e296-8d7b-57af-9c7b-e1f60508b5ff"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "c2379399-1571-5714-acf2-44a0f067d066"
+          },
+          {
+            "name": "ConstructorKey",
+            "dataType": "string",
+            "sourceColumn": "ConstructorKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "23f3d40e-6f98-5572-8b2f-ead904638c0a"
+          },
+          {
+            "name": "Laps",
+            "dataType": "int64",
+            "sourceColumn": "Laps",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "a0daff4b-766b-5fad-8bc7-20682e5b22d7"
+          },
+          {
+            "name": "LapFraction",
+            "dataType": "double",
+            "sourceColumn": "LapFraction",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "1570a0a5-acc7-5492-8b50-b50ed51a8a14"
+          },
+          {
+            "name": "TimingEligible",
+            "dataType": "int64",
+            "sourceColumn": "TimingEligible",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "33039ca9-78df-5fa4-bc97-b9b6023b0e27"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactPitStops",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"f1/FactPitStops.csv\",{{\"RaceKey\",Int64.Type},{\"DriverKey\",type text},{\"Stop\",Int64.Type},{\"Lap\",Int64.Type},{\"DurationSeconds\",type number},{\"TimeOfDay\",type text},{\"DataClass\",type text},{\"ConstructorKey\",type text},{\"Laps\",Int64.Type},{\"LapFraction\",type number},{\"TimingEligible\",Int64.Type}},{\"RaceKey\",\"DriverKey\",\"Stop\"},{\"DurationSeconds\"},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "9160131e-5220-5bed-a997-be951f57e108"
+      },
+      {
+        "name": "FactQualifying",
+        "columns": [
+          {
+            "name": "RaceKey",
+            "dataType": "int64",
+            "sourceColumn": "RaceKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "bca2ca8d-eb34-5a03-8cd1-ce44594e0777"
+          },
+          {
+            "name": "DriverKey",
+            "dataType": "string",
+            "sourceColumn": "DriverKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "3c4a7f74-ac90-5b9c-8b09-51bac0d7e739"
+          },
+          {
+            "name": "ConstructorKey",
+            "dataType": "string",
+            "sourceColumn": "ConstructorKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "7d8dbec0-32ee-5326-9aba-896537f235b9"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "e17c52cd-16cc-542a-877d-50fec24e0176"
+          },
+          {
+            "name": "QualifyingPosition",
+            "dataType": "int64",
+            "sourceColumn": "QualifyingPosition",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "2e300aea-2225-5483-92bf-ce5a81e80e0d"
+          },
+          {
+            "name": "Q1Seconds",
+            "dataType": "double",
+            "sourceColumn": "Q1Seconds",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "5b544b52-0baa-552a-a53d-ded73726cf9c"
+          },
+          {
+            "name": "Q2Seconds",
+            "dataType": "double",
+            "sourceColumn": "Q2Seconds",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "278c6d72-665f-5bf2-a497-b234474e5d65"
+          },
+          {
+            "name": "Q3Seconds",
+            "dataType": "double",
+            "sourceColumn": "Q3Seconds",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "be799243-9f2a-5cae-94ad-ea8e77782978"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactQualifying",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"f1/FactQualifying.csv\",{{\"RaceKey\",Int64.Type},{\"DriverKey\",type text},{\"ConstructorKey\",type text},{\"DataClass\",type text},{\"QualifyingPosition\",Int64.Type},{\"Q1Seconds\",type number},{\"Q2Seconds\",type number},{\"Q3Seconds\",type number}},{\"RaceKey\",\"DriverKey\"},{\"Q1Seconds\",\"Q2Seconds\",\"Q3Seconds\"},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "b0b6b40c-c955-5ca0-94a2-aed2b40af4b3"
+      },
+      {
+        "name": "FactRaceResults",
+        "columns": [
+          {
+            "name": "RaceKey",
+            "dataType": "int64",
+            "sourceColumn": "RaceKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "c30ba6af-fd3b-557e-a055-ccabebd68585"
+          },
+          {
+            "name": "DriverKey",
+            "dataType": "string",
+            "sourceColumn": "DriverKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "f6dda9cc-bf4e-591c-b2b5-6a8178200c64"
+          },
+          {
+            "name": "ConstructorKey",
+            "dataType": "string",
+            "sourceColumn": "ConstructorKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "76c351b1-3e99-51f3-ada9-94f7e4e07288"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "3cc8e1f9-7be5-52f8-ab43-7b9ff935bc23"
+          },
+          {
+            "name": "Grid",
+            "dataType": "int64",
+            "sourceColumn": "Grid",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "66ddc303-085a-529e-a711-0fa773f46eec"
+          },
+          {
+            "name": "FinishPosition",
+            "dataType": "int64",
+            "sourceColumn": "FinishPosition",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "6407db92-d8c2-58d2-89a6-9c30d249c651"
+          },
+          {
+            "name": "Points",
+            "dataType": "double",
+            "sourceColumn": "Points",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "5e374929-8068-5ef5-b772-41a5f60482d6"
+          },
+          {
+            "name": "Laps",
+            "dataType": "int64",
+            "sourceColumn": "Laps",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "e5603b25-ba9b-5701-9e24-67e763350245"
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "sourceColumn": "Status",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "5377dc97-62cc-5253-9f66-e77ddb7fa5c9"
+          },
+          {
+            "name": "ClassifiedFinish",
+            "dataType": "int64",
+            "sourceColumn": "ClassifiedFinish",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "045e7c78-2717-59bd-b8d5-c59702590e95"
+          },
+          {
+            "name": "PositionGain",
+            "dataType": "double",
+            "sourceColumn": "PositionGain",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "fbec4c38-66ed-5c90-bd09-f46328b3e7f5"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactRaceResults",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"f1/FactRaceResults.csv\",{{\"RaceKey\",Int64.Type},{\"DriverKey\",type text},{\"ConstructorKey\",type text},{\"DataClass\",type text},{\"Grid\",Int64.Type},{\"FinishPosition\",Int64.Type},{\"Points\",type number},{\"Laps\",Int64.Type},{\"Status\",type text},{\"ClassifiedFinish\",Int64.Type},{\"PositionGain\",type number}},{\"RaceKey\",\"DriverKey\"},{\"PositionGain\"},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "7c468cd0-cbdd-5d9a-818e-17019b4be408"
+      },
+      {
+        "name": "FactSprintResults",
+        "columns": [
+          {
+            "name": "RaceKey",
+            "dataType": "int64",
+            "sourceColumn": "RaceKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "7ba5bb5b-9c36-5782-9b67-f4df04112698"
+          },
+          {
+            "name": "DriverKey",
+            "dataType": "string",
+            "sourceColumn": "DriverKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "97d66c10-2c77-5641-8651-47a6d89fc3fc"
+          },
+          {
+            "name": "ConstructorKey",
+            "dataType": "string",
+            "sourceColumn": "ConstructorKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "cfe7e8ab-74f9-5c03-8b4a-6b6238b959bf"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "0d8fa88f-98e4-575a-aa08-37d36e431ea3"
+          },
+          {
+            "name": "Grid",
+            "dataType": "int64",
+            "sourceColumn": "Grid",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "4311b572-3107-5e84-b94e-5ca5dc03eb34"
+          },
+          {
+            "name": "FinishPosition",
+            "dataType": "int64",
+            "sourceColumn": "FinishPosition",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "397cc4d3-67aa-5b4c-8186-042f12ff165b"
+          },
+          {
+            "name": "Points",
+            "dataType": "double",
+            "sourceColumn": "Points",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "afa77323-a892-5059-b5ee-687d28ea4066"
+          },
+          {
+            "name": "Laps",
+            "dataType": "int64",
+            "sourceColumn": "Laps",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "21c31f52-3182-5704-ba8e-62e85a60d84f"
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "sourceColumn": "Status",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "bf99f814-b6e8-5857-ac0e-383c29d98aee"
+          },
+          {
+            "name": "ClassifiedFinish",
+            "dataType": "int64",
+            "sourceColumn": "ClassifiedFinish",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "84e8eebc-4867-5c99-8882-bb38f46537d1"
+          },
+          {
+            "name": "PositionGain",
+            "dataType": "double",
+            "sourceColumn": "PositionGain",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "58a6f356-dc37-5696-ae17-e295594d45a0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactSprintResults",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"f1/FactSprintResults.csv\",{{\"RaceKey\",Int64.Type},{\"DriverKey\",type text},{\"ConstructorKey\",type text},{\"DataClass\",type text},{\"Grid\",Int64.Type},{\"FinishPosition\",Int64.Type},{\"Points\",type number},{\"Laps\",Int64.Type},{\"Status\",type text},{\"ClassifiedFinish\",Int64.Type},{\"PositionGain\",type number}},{\"RaceKey\",\"DriverKey\"},{\"PositionGain\"},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "0c956527-ed0d-55bb-945f-fa81f7c123cb"
+      },
+      {
+        "name": "Measures",
+        "columns": [
+          {
+            "name": "_Home",
+            "dataType": "int64",
+            "sourceColumn": "_Home",
+            "isHidden": true,
+            "lineageTag": "d29ad2cc-858b-5206-a771-e390dcf79927"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Measures",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "#table(type table [_Home=Int64.Type],{{0}})"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "GP Points",
+            "expression": "SUM(FactRaceResults[Points])",
+            "formatString": "#,0",
+            "displayFolder": "01 Championship",
+            "description": "Grand Prix points only; includes fastest-lap points recorded by source.",
+            "lineageTag": "dcb2ccef-8b37-5ec2-be75-c98a548a2f03"
+          },
+          {
+            "name": "Sprint Points",
+            "expression": "SUM(FactSprintResults[Points])",
+            "formatString": "#,0",
+            "displayFolder": "01 Championship",
+            "description": "Sprint points separately ingested.",
+            "lineageTag": "a253d810-93a8-516f-975e-1aa3121cc140"
+          },
+          {
+            "name": "Total Recorded Points",
+            "expression": "[GP Points]+[Sprint Points]",
+            "formatString": "#,0",
+            "displayFolder": "01 Championship",
+            "description": "Session-result total reconciled against official standings.",
+            "lineageTag": "da53828a-8bbc-542a-a280-d3e4048f0adb"
+          },
+          {
+            "name": "Official Driver Points",
+            "expression": "IF(ISFILTERED(DimRace)||ISFILTERED(DimCircuit)||ISFILTERED(DimConstructor),BLANK(),SUM(FactDriverStandings[Points]))",
+            "formatString": "#,0",
+            "displayFolder": "01 Championship",
+            "description": "Final season standings, not filtered-race accumulation. Blank under race/circuit/constructor filters.",
+            "lineageTag": "8fbc83c6-179e-5a57-b8f7-6340cf44a77f"
+          },
+          {
+            "name": "Official Constructor Points",
+            "expression": "IF(ISFILTERED(DimRace)||ISFILTERED(DimCircuit)||ISFILTERED(DimDriver),BLANK(),SUM(FactConstructorStandings[Points]))",
+            "formatString": "#,0",
+            "displayFolder": "01 Championship",
+            "description": "Official final constructor standings; driver filter has no meaningful denominator.",
+            "lineageTag": "8dcd8ae3-aa26-5a29-ad39-a1f0fdbb5927"
+          },
+          {
+            "name": "Starts",
+            "expression": "COUNTROWS(FactRaceResults)",
+            "formatString": "#,0",
+            "displayFolder": "02 Execution",
+            "description": "Driver-race entries; a constructor generally has two entries per Grand Prix.",
+            "lineageTag": "5fbfcc0a-7c28-5009-b741-7facbda7132c"
+          },
+          {
+            "name": "Wins",
+            "expression": "CALCULATE([Starts],FactRaceResults[FinishPosition]=1)",
+            "formatString": "#,0",
+            "displayFolder": "02 Execution",
+            "description": "GP wins from classified position.",
+            "lineageTag": "68d6b8a7-0b16-5a28-aeeb-b0a878588b95"
+          },
+          {
+            "name": "Podiums",
+            "expression": "CALCULATE([Starts],FactRaceResults[FinishPosition]<=3)",
+            "formatString": "#,0",
+            "displayFolder": "02 Execution",
+            "description": "GP classified top three.",
+            "lineageTag": "c090b275-04e6-5827-9a20-d3936231942d"
+          },
+          {
+            "name": "Non-finishes",
+            "expression": "CALCULATE([Starts],FactRaceResults[ClassifiedFinish]=0)",
+            "formatString": "#,0",
+            "displayFolder": "03 Reliability",
+            "description": "Status excludes Finished/Lapped and legacy +N Lap(s). Includes retirement, DNS and DSQ; not all mechanical.",
+            "lineageTag": "bc3e4f0d-bda5-5569-8ed0-0fcd1114e597"
+          },
+          {
+            "name": "Non-finish Rate %",
+            "expression": "DIVIDE([Non-finishes],[Starts])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "03 Reliability",
+            "description": "Observed non-completion proxy, not engineering reliability probability.",
+            "lineageTag": "efdf9f18-cf25-5bd2-83ec-53a7e8898618"
+          },
+          {
+            "name": "Average Grid",
+            "expression": "AVERAGEX(FILTER(FactRaceResults,FactRaceResults[Grid]>0),FactRaceResults[Grid])",
+            "formatString": "0.00",
+            "displayFolder": "02 Execution",
+            "description": "Excludes grid 0 pit-lane starts.",
+            "lineageTag": "148308ce-b52e-53c6-af2c-8f5e50870323"
+          },
+          {
+            "name": "Average Finish",
+            "expression": "AVERAGE(FactRaceResults[FinishPosition])",
+            "formatString": "0.00",
+            "displayFolder": "02 Execution",
+            "description": "Includes all classified positions assigned by source, including nonfinishers.",
+            "lineageTag": "9dfebe09-f824-592d-a8b0-ca74cdb386d5"
+          },
+          {
+            "name": "Average Qualifying Position",
+            "expression": "AVERAGE(FactQualifying[QualifyingPosition])",
+            "formatString": "0.00",
+            "displayFolder": "02 Execution",
+            "description": "Ordinal result; not lap-time pace measured across dissimilar sessions.",
+            "lineageTag": "16de8969-d9d1-56e2-9913-43da11a85bcc"
+          },
+          {
+            "name": "Classified Position Gain",
+            "expression": "AVERAGE(FactRaceResults[PositionGain])",
+            "formatString": "0.00",
+            "displayFolder": "02 Execution",
+            "description": "Mean grid minus finish for finish/+lap status and nonzero grids only.",
+            "lineageTag": "85416a74-354b-5808-a855-78cfdcd4da71"
+          },
+          {
+            "name": "Movement Eligible Starts",
+            "expression": "COUNT(FactRaceResults[PositionGain])",
+            "formatString": "#,0",
+            "displayFolder": "02 Execution",
+            "description": "Denominator for movement; DNF exclusion creates survivorship bias.",
+            "lineageTag": "bb9f95fc-220a-5ecf-a8fd-01a987f256aa"
+          },
+          {
+            "name": "Teammate Comparable Starts",
+            "expression": "SUMX(FILTER(FactRaceResults,FactRaceResults[ClassifiedFinish]=1),VAR RaceID=FactRaceResults[RaceKey] VAR TeamID=FactRaceResults[ConstructorKey] VAR DriverID=FactRaceResults[DriverKey] VAR Opponent=FILTER(ALL(FactRaceResults),FactRaceResults[RaceKey]=RaceID&&FactRaceResults[ConstructorKey]=TeamID&&FactRaceResults[DriverKey]<>DriverID&&FactRaceResults[ClassifiedFinish]=1) RETURN IF(COUNTROWS(Opponent)=1,1,0))",
+            "formatString": "#,0",
+            "displayFolder": "02 Execution",
+            "description": "Driver-race comparisons with exactly one teammate and both finish/+lap statuses. Uses actual constructor at that race; opponent lookup ignores current driver filter. Survivor bias remains.",
+            "lineageTag": "157cc777-216f-5ddc-b79b-ad32d4e529aa"
+          },
+          {
+            "name": "Teammate Ahead Finishes",
+            "expression": "SUMX(FILTER(FactRaceResults,FactRaceResults[ClassifiedFinish]=1),VAR RaceID=FactRaceResults[RaceKey] VAR TeamID=FactRaceResults[ConstructorKey] VAR DriverID=FactRaceResults[DriverKey] VAR Finish=FactRaceResults[FinishPosition] VAR Opponent=FILTER(ALL(FactRaceResults),FactRaceResults[RaceKey]=RaceID&&FactRaceResults[ConstructorKey]=TeamID&&FactRaceResults[DriverKey]<>DriverID&&FactRaceResults[ClassifiedFinish]=1) RETURN IF(COUNTROWS(Opponent)=1&&Finish<MINX(Opponent,FactRaceResults[FinishPosition]),1,0))",
+            "formatString": "#,0",
+            "displayFolder": "02 Execution",
+            "description": "Ahead count within shared completed races. Total across both teammates counts one ahead result per comparable pair.",
+            "lineageTag": "7664818e-52e5-5e04-850a-67ae1e9aa687"
+          },
+          {
+            "name": "Teammate Ahead Rate %",
+            "expression": "DIVIDE([Teammate Ahead Finishes],[Teammate Comparable Starts])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "02 Execution",
+            "description": "Shared-completion ahead rate; show the comparable-start denominator. This does not isolate underlying pace or estimate a causal driver effect.",
+            "lineageTag": "9caad81e-7b5f-5d81-aa53-50c4607d11b0"
+          },
+          {
+            "name": "GP Points Above Grid Benchmark",
+            "expression": "SUMX(FactRaceResults,VAR G=FactRaceResults[Grid] VAR P=SWITCH(G,1,25,2,18,3,15,4,12,5,10,6,8,7,6,8,4,9,2,10,1,0) RETURN FactRaceResults[Points]-P)",
+            "formatString": "#,0",
+            "displayFolder": "02 Execution",
+            "description": "Actual GP points minus standard points if finishing at grid. Descriptive benchmark, no causal lost-points claim.",
+            "lineageTag": "2a0d11bd-9639-5223-b59e-629cea8c1042"
+          },
+          {
+            "name": "Cumulative GP Points",
+            "expression": "VAR LastRound=MAX(DimRace[Round]) VAR Season=SELECTEDVALUE(DimSeason[Season]) RETURN IF(NOT ISBLANK(Season),CALCULATE([GP Points],FILTER(ALL(DimRace),DimRace[Season]=Season&&DimRace[Round]<=LastRound)))",
+            "formatString": "#,0",
+            "displayFolder": "01 Championship",
+            "description": "Single-season cumulative GP points; explicitly excludes sprints, preserves driver/constructor selection.",
+            "lineageTag": "c696d5fb-2abb-5dca-a241-29f42664e799"
+          },
+          {
+            "name": "Points per Start",
+            "expression": "DIVIDE([GP Points],[Starts])",
+            "formatString": "0.00",
+            "displayFolder": "02 Execution",
+            "description": "Uses all race entries.",
+            "lineageTag": "c27450dc-55ee-5f0c-a6b6-604ebcad54e4"
+          },
+          {
+            "name": "Driver Points Rank",
+            "expression": "RANKX(ALLSELECTED(DimDriver[Driver]),[Total Recorded Points],,DESC,DENSE)",
+            "formatString": "0",
+            "displayFolder": "01 Championship",
+            "description": "Selected recorded points, not official penalty-adjusted championship rank.",
+            "lineageTag": "49054235-53d4-5cba-92e6-6319367fefb1"
+          },
+          {
+            "name": "Pit Stops",
+            "expression": "COUNTROWS(FactPitStops)",
+            "formatString": "#,0",
+            "displayFolder": "04 Pit stops",
+            "description": "All recorded stops, including extreme durations retained for audit.",
+            "lineageTag": "fe0146a7-ac65-5732-ba4d-32dc207294a3"
+          },
+          {
+            "name": "Eligible Pit Stops",
+            "expression": "CALCULATE([Pit Stops],FactPitStops[TimingEligible]=1)",
+            "formatString": "#,0",
+            "displayFolder": "04 Pit stops",
+            "description": "Duration 10–60 seconds, transparent analytical screen.",
+            "lineageTag": "618c3945-139a-5b03-8632-e5374c228845"
+          },
+          {
+            "name": "Median Pit Duration",
+            "expression": "CALCULATE(MEDIAN(FactPitStops[DurationSeconds]),FactPitStops[TimingEligible]=1)",
+            "formatString": "0.000 \"s\"",
+            "displayFolder": "04 Pit stops",
+            "description": "API pit duration, not stationary wheel-change time. Circuit pit-lane lengths differ.",
+            "lineageTag": "44f6e8e7-83b8-575d-9155-24b694b28062"
+          },
+          {
+            "name": "Pit Duration StdDev",
+            "expression": "CALCULATE(STDEV.P(FactPitStops[DurationSeconds]),FactPitStops[TimingEligible]=1)",
+            "formatString": "0.000 \"s\"",
+            "displayFolder": "04 Pit stops",
+            "description": "Dispersion across eligible stops. Compare within race before judging a team.",
+            "lineageTag": "53a2b44b-4d3f-571c-9ced-85b4a274bc49"
+          },
+          {
+            "name": "Median Pit Window",
+            "expression": "MEDIAN(FactPitStops[LapFraction])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "04 Pit stops",
+            "description": "Pit lap / driver completed race laps; denominator can be shortened by retirement.",
+            "lineageTag": "ca02ed03-e634-5d8b-9575-a6d434425c05"
+          },
+          {
+            "name": "Sample Lap Observations",
+            "expression": "COUNTROWS(FactLaps)",
+            "formatString": "#,0",
+            "displayFolder": "05 Sample laps",
+            "description": "Only Bahrain and Monaco 2024; all laps retained, no claimed clean-air telemetry.",
+            "lineageTag": "eeaa5d54-929f-5c10-b02d-c0bca103f673"
+          },
+          {
+            "name": "Median Sample Lap",
+            "expression": "MEDIAN(FactLaps[LapSeconds])",
+            "formatString": "0.000 \"s\"",
+            "displayFolder": "05 Sample laps",
+            "description": "Raw lap median; safety cars, traffic and pit laps are confounders.",
+            "lineageTag": "1b5e3dfe-b166-536f-abf9-7a69d6f3d7db"
+          },
+          {
+            "name": "Scenario Pit Cost",
+            "expression": "SELECTEDVALUE(StopCount[Value],2)*SELECTEDVALUE(PitLoss[Value],22)",
+            "formatString": "0.0 \"s\"",
+            "displayFolder": "06 Strategy simulation",
+            "description": "SIMULATION: assumed number of stops × assumed pit loss.",
+            "lineageTag": "defa5cf2-bcf4-5c35-8abe-b5e529db2432"
+          },
+          {
+            "name": "Scenario Degradation Cost",
+            "expression": "VAR N=SELECTEDVALUE(RaceLaps[Value],60) VAR S=SELECTEDVALUE(StopCount[Value],2)+1 VAR Q=INT(N/S) VAR R=MOD(N,S) VAR D=SELECTEDVALUE(Degradation[Value],0.05) RETURN D*((S-R)*Q*(Q-1)/2+R*Q*(Q+1)/2)",
+            "formatString": "0.0 \"s\"",
+            "displayFolder": "06 Strategy simulation",
+            "description": "SIMULATION: balanced integer stints; lap penalty accumulates linearly and resets at each stop.",
+            "lineageTag": "64bb1534-1404-554e-8710-5f040f5cb9ba"
+          },
+          {
+            "name": "Scenario Added Time",
+            "expression": "[Scenario Pit Cost]+[Scenario Degradation Cost]",
+            "formatString": "0.0 \"s\"",
+            "displayFolder": "06 Strategy simulation",
+            "description": "SIMULATION: relative to constant fresh-tyre lap baseline; no finishing-position prediction.",
+            "lineageTag": "d0781694-d219-5eb2-a07d-fc82665f6a90"
+          },
+          {
+            "name": "Scenario Title",
+            "expression": "\"SIMULATION | \" & FORMAT(SELECTEDVALUE(StopCount[Value],2),\"0\") & \" stops | No outcome prediction\"",
+            "formatString": "@",
+            "displayFolder": "06 Strategy simulation",
+            "description": "Always displays simulation status.",
+            "lineageTag": "238c5fe9-0c29-5fd8-94cd-2c19e8d8a4b2"
+          }
+        ],
+        "lineageTag": "1b074428-f4bf-528c-83a4-b88e47831a6c"
+      },
+      {
+        "name": "StopCount",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Value",
+            "dataType": "int64",
+            "sourceColumn": "[Value]",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "extendedProperties": [
+              {
+                "type": "json",
+                "name": "ParameterMetadata",
+                "value": {
+                  "version": 0
+                }
+              }
+            ],
+            "lineageTag": "7922e59e-5a3a-5c8b-87b2-a43614a61ca4"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "StopCount",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "GENERATESERIES(0,4,1)"
+            }
+          }
+        ],
+        "lineageTag": "74fc9c85-ebf2-5735-9d9b-0687bfb1d554"
+      },
+      {
+        "name": "PitLoss",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Value",
+            "dataType": "int64",
+            "sourceColumn": "[Value]",
+            "formatString": "0 \"s\"",
+            "summarizeBy": "none",
+            "extendedProperties": [
+              {
+                "type": "json",
+                "name": "ParameterMetadata",
+                "value": {
+                  "version": 0
+                }
+              }
+            ],
+            "lineageTag": "33fa5604-85c0-5e21-a25b-470aee295d98"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "PitLoss",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "GENERATESERIES(15,35,1)"
+            }
+          }
+        ],
+        "lineageTag": "d9ae6123-832d-58f4-8051-34042fe11f72"
+      },
+      {
+        "name": "Degradation",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Value",
+            "dataType": "double",
+            "sourceColumn": "[Value]",
+            "formatString": "0.00 \"s/lap\"",
+            "summarizeBy": "none",
+            "extendedProperties": [
+              {
+                "type": "json",
+                "name": "ParameterMetadata",
+                "value": {
+                  "version": 0
+                }
+              }
+            ],
+            "lineageTag": "7d4d1767-d3aa-577b-a95c-70b1994ecea3"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Degradation",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "GENERATESERIES(0,0.2,0.01)"
+            }
+          }
+        ],
+        "lineageTag": "3779ab52-2be5-56ff-88ac-1eaf34f95b33"
+      },
+      {
+        "name": "RaceLaps",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Value",
+            "dataType": "int64",
+            "sourceColumn": "[Value]",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "extendedProperties": [
+              {
+                "type": "json",
+                "name": "ParameterMetadata",
+                "value": {
+                  "version": 0
+                }
+              }
+            ],
+            "lineageTag": "fb3039d7-ae46-5243-a6ab-4f362d6257e7"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "RaceLaps",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "GENERATESERIES(40,80,1)"
+            }
+          }
+        ],
+        "lineageTag": "ff38a12f-1a7b-53c2-8d69-49f347948427"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "3fb3e0af-f04a-5b26-9ff8-3df1a293237b",
+        "fromTable": "DimRace",
+        "fromColumn": "CircuitKey",
+        "toTable": "DimCircuit",
+        "toColumn": "CircuitKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "7063aa71-86ca-5c40-9c79-1c333e58983f",
+        "fromTable": "DimRace",
+        "fromColumn": "Season",
+        "toTable": "DimSeason",
+        "toColumn": "Season",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "876ac801-db51-527c-9c0e-4844980a666d",
+        "fromTable": "DimRace",
+        "fromColumn": "Date",
+        "toTable": "DimDate",
+        "toColumn": "Date",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "9ce7178d-aa2e-5e56-a47b-4cd700b30fbd",
+        "fromTable": "FactRaceResults",
+        "fromColumn": "RaceKey",
+        "toTable": "DimRace",
+        "toColumn": "RaceKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "df0b31c0-5643-5472-96a5-79768693b1ce",
+        "fromTable": "FactRaceResults",
+        "fromColumn": "DriverKey",
+        "toTable": "DimDriver",
+        "toColumn": "DriverKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "d78cb43c-2df7-563e-b5e7-ead84ee70bcc",
+        "fromTable": "FactRaceResults",
+        "fromColumn": "ConstructorKey",
+        "toTable": "DimConstructor",
+        "toColumn": "ConstructorKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "9f417d18-294e-58e1-8403-47e72fdb7490",
+        "fromTable": "FactQualifying",
+        "fromColumn": "RaceKey",
+        "toTable": "DimRace",
+        "toColumn": "RaceKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "545eb2a3-f9e7-51cf-a898-f16a21f4cb07",
+        "fromTable": "FactQualifying",
+        "fromColumn": "DriverKey",
+        "toTable": "DimDriver",
+        "toColumn": "DriverKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "2e327166-95da-512f-aa25-fb2a836a29f9",
+        "fromTable": "FactQualifying",
+        "fromColumn": "ConstructorKey",
+        "toTable": "DimConstructor",
+        "toColumn": "ConstructorKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "e07c4dad-f4a0-51bd-8f95-24711c320cb2",
+        "fromTable": "FactSprintResults",
+        "fromColumn": "RaceKey",
+        "toTable": "DimRace",
+        "toColumn": "RaceKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "5b1458f9-fb63-5377-ab85-8077bfeaa6aa",
+        "fromTable": "FactSprintResults",
+        "fromColumn": "DriverKey",
+        "toTable": "DimDriver",
+        "toColumn": "DriverKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "65bc2960-0002-58bf-a1a5-66adc1b10722",
+        "fromTable": "FactSprintResults",
+        "fromColumn": "ConstructorKey",
+        "toTable": "DimConstructor",
+        "toColumn": "ConstructorKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "182e0678-fa24-5c4a-b587-5ffbbd4f141c",
+        "fromTable": "FactPitStops",
+        "fromColumn": "RaceKey",
+        "toTable": "DimRace",
+        "toColumn": "RaceKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "1ebdfdcc-59d7-5c3d-a42f-bc2b7a950abe",
+        "fromTable": "FactPitStops",
+        "fromColumn": "DriverKey",
+        "toTable": "DimDriver",
+        "toColumn": "DriverKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "719efb77-5705-5736-900a-a41165dd2bfe",
+        "fromTable": "FactPitStops",
+        "fromColumn": "ConstructorKey",
+        "toTable": "DimConstructor",
+        "toColumn": "ConstructorKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "603a7cea-3cde-5007-baaf-e0be716bb381",
+        "fromTable": "FactLaps",
+        "fromColumn": "RaceKey",
+        "toTable": "DimRace",
+        "toColumn": "RaceKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "29979bc6-8a7b-5750-89c3-e6a259d610b4",
+        "fromTable": "FactLaps",
+        "fromColumn": "DriverKey",
+        "toTable": "DimDriver",
+        "toColumn": "DriverKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "ac3b4cb8-fc04-5afc-8800-3255a6f7e2ea",
+        "fromTable": "FactLaps",
+        "fromColumn": "ConstructorKey",
+        "toTable": "DimConstructor",
+        "toColumn": "ConstructorKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "48014c5e-d3d3-5af1-b3e9-e36659b678e3",
+        "fromTable": "FactDriverStandings",
+        "fromColumn": "Season",
+        "toTable": "DimSeason",
+        "toColumn": "Season",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "35c83a83-5009-5c16-a4db-23a9bb4bd28e",
+        "fromTable": "FactDriverStandings",
+        "fromColumn": "DriverKey",
+        "toTable": "DimDriver",
+        "toColumn": "DriverKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "91202e68-10e0-58e5-ae1c-eb4fdd0390cb",
+        "fromTable": "FactConstructorStandings",
+        "fromColumn": "Season",
+        "toTable": "DimSeason",
+        "toColumn": "Season",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "cfa2db11-ef29-53f6-9523-957e96a3bba0",
+        "fromTable": "FactConstructorStandings",
+        "fromColumn": "ConstructorKey",
+        "toTable": "DimConstructor",
+        "toColumn": "ConstructorKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DataRoot",
+        "kind": "m",
+        "expression": "\"C:/APEX/apex-insights/data/processed/\" meta [IsParameterQuery=true,Type=\"Text\",IsParameterQueryRequired=true]"
+      },
+      {
+        "name": "fnLoadCsv",
+        "kind": "m",
+        "expression": "(relativePath as text, types as list, keyColumns as list, nullableColumns as list, permittedClasses as list) as table =>\nlet\n    Source = Csv.Document(File.Contents(DataRoot & relativePath),[Delimiter=\",\",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),\n    Headers = Table.PromoteHeaders(Source,[PromoteAllScalars=true]),\n    Expected = List.Transform(types, each _{0}),\n    SchemaChecked = if List.Sort(Table.ColumnNames(Headers)) <> List.Sort(Expected) then error \"CSV schema mismatch: \" & relativePath else Headers,\n    Trimmed = Table.TransformColumns(SchemaChecked,List.Transform(Expected,(c)=>{c,each if _=null then null else Text.Trim(Text.From(_)),type nullable text})),\n    EmptyToNull = Table.ReplaceValue(Trimmed,\"\",null,Replacer.ReplaceValue,Expected),\n    Typed = Table.TransformColumnTypes(EmptyToNull,types,\"en-AU\"),\n    RequiredColumns = List.Difference(Expected,nullableColumns),\n    InvalidNulls = Table.SelectRows(Typed,(row)=>List.AnyTrue(List.Transform(RequiredColumns,(c)=>Record.Field(row,c)=null))),\n    NullChecked = if Table.RowCount(InvalidNulls)>0 then error \"Missing required value: \" & relativePath else Typed,\n    KeyGroups = Table.Group(NullChecked,keyColumns,{{\"Rows\",each Table.RowCount(_),Int64.Type}}),\n    DuplicateKeys = Table.SelectRows(KeyGroups,each [Rows]>1),\n    KeyChecked = if Table.RowCount(DuplicateKeys)>0 then error \"Duplicate logical key: \" & relativePath else NullChecked,\n    InvalidClasses = Table.SelectRows(KeyChecked,each not List.Contains(permittedClasses,[DataClass])),\n    Result = if Table.RowCount(InvalidClasses)>0 then error \"Provenance mismatch: \" & relativePath else KeyChecked\nin Result"
+      },
+      {
+        "name": "fnCalendar",
+        "kind": "m",
+        "expression": "(startDate as date,endDate as date,dataClass as text) as table =>\nlet\n    Dates = Table.FromList(List.Dates(startDate,Duration.Days(endDate-startDate)+1,#duration(1,0,0,0)),Splitter.SplitByNothing(),{\"Date\"}),\n    Typed = Table.TransformColumnTypes(Dates,{{\"Date\",type date}}),\n    Year = Table.AddColumn(Typed,\"Year\",each Date.Year([Date]),Int64.Type),\n    MonthNumber = Table.AddColumn(Year,\"MonthNumber\",each Date.Month([Date]),Int64.Type),\n    Month = Table.AddColumn(MonthNumber,\"Month\",each Date.ToText([Date],\"MMM\",\"en-AU\"),type text),\n    YearMonth = Table.AddColumn(Month,\"YearMonth\",each Date.ToText([Date],\"yyyy-MM\",\"en-AU\"),type text),\n    Quarter = Table.AddColumn(YearMonth,\"Quarter\",each \"Q\" & Text.From(Date.QuarterOfYear([Date])),type text),\n    WeekStart = Table.AddColumn(Quarter,\"WeekStart\",each Date.StartOfWeek([Date],Day.Monday),type date),\n    Provenance = Table.AddColumn(WeekStart,\"DataClass\",each dataClass,type text)\nin Provenance"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DimCircuit\", \"DimConstructor\", \"DimDate\", \"DimDriver\", \"DimRace\", \"DimSeason\", \"FactConstructorStandings\", \"FactDriverStandings\", \"FactLaps\", \"FactPitStops\", \"FactQualifying\", \"FactRaceResults\", \"FactSprintResults\", \"Measures\", \"StopCount\", \"PitLoss\", \"Degradation\", \"RaceLaps\"]"
+      }
+    ]
+  }
+}

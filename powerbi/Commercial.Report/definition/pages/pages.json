@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.0.0/schema.json",
+  "pageOrder": [
+    "fmcg_01",
+    "fmcg_02",
+    "fmcg_03",
+    "fmcg_04",
+    "fmcg_05",
+    "fmcg_06",
+    "fmcg_07",
+    "fmcg_08",
+    "fmcg_tooltip",
+    "fmcg_detail"
+  ],
+  "activePageName": "fmcg_01"
+}

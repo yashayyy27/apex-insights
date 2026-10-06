@@ -1,0 +1,1 @@
+fnLoadCsv("f1/FactDriverStandings.csv",{{"Season",Int64.Type},{"DriverKey",type text},{"Position",Int64.Type},{"Points",type number},{"Wins",Int64.Type},{"DataClass",type text}},{"Season","DriverKey"},{},{"PUBLIC","PUBLIC_DERIVED"})

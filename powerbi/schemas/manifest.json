@@ -1,0 +1,78 @@
+{
+  "https://developer.microsoft.com/json-schemas/fabric/pbip/pbipProperties/1.0.0/schema.json": {
+    "file": "pbip_pbipProperties_1.0.0_schema.json",
+    "sha256": "84193ff836172c6d634ec2c33def503f2fd528e9111f565555df231bee617227"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json": {
+    "file": "item_report_definitionProperties_2.0.0_schema.json",
+    "sha256": "4f277e82c028db2766876fc92f865c851fa58de19a28ca1dd6bbdccd15f65cf0"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/semanticModel/definitionProperties/1.0.0/schema.json": {
+    "file": "item_semanticModel_definitionProperties_1.0.0_schema.json",
+    "sha256": "f3dc640054bb26f41617dd6a0a22d7f2e64b93a66461e85a9e98cc8b53d3e0fa"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/versionMetadata/1.0.0/schema.json": {
+    "file": "item_report_definition_versionMetadata_1.0.0_schema.json",
+    "sha256": "7164327ee164caa3fe505d74231c6637e85d86cce0d384a967b80cf935b1883a"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/2.0.0/schema.json": {
+    "file": "item_report_definition_report_2.0.0_schema.json",
+    "sha256": "764f2811f5e219bce50fcfa6e41330070c83017547eb00670d4dfb4b8a8816ed"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.0.0/schema.json": {
+    "file": "item_report_definition_pagesMetadata_1.0.0_schema.json",
+    "sha256": "8ebfbc38a7bb9465e75f11282fe5acf1f07289001fd8d075a981736e8e4b05c8"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json": {
+    "file": "item_report_definition_page_2.0.0_schema.json",
+    "sha256": "158b0947df94f216de12efe468630d77dafb3c0afb03b59fc298aa7f1afb7628"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json": {
+    "file": "item_report_definition_visualContainer_2.1.0_schema.json",
+    "sha256": "e4d3cc206089b6e8695d21c84386e69a69d07fb76182644d7a002a264c0c7f79"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.0.0/schema.json": {
+    "file": "item_report_definition_bookmark_1.0.0_schema.json",
+    "sha256": "51f75c7a712ba8467adf9dac6d66b143fa23e357cdf004e7d059b6977940872c"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmarksMetadata/1.0.0/schema.json": {
+    "file": "item_report_definition_bookmarksMetadata_1.0.0_schema.json",
+    "sha256": "5169275122ab9ec3ff42755185de54ad39fcee766745a165999e81d8709b3cc7"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/filterConfiguration/1.1.0/schema-embedded.json": {
+    "file": "item_report_definition_filterConfiguration_1.1.0_schema-embedded.json",
+    "sha256": "3ee3b42e27047a81bcde5e20c69e43578d9210ce3f52873fc97560e9bded7e2f"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/formattingObjectDefinitions/1.3.0/schema.json": {
+    "file": "item_report_definition_formattingObjectDefinitions_1.3.0_schema.json",
+    "sha256": "272946ebbe7e899d5773042f76e85c626fd2fa8db88f562f04b241b578467abf"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/filterConfiguration/1.2.0/schema-embedded.json": {
+    "file": "item_report_definition_filterConfiguration_1.2.0_schema-embedded.json",
+    "sha256": "553ddaac9fbd87b1fb32db29e62d5e09d71c23173d0ead5e1110ef76e26db975"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/semanticQuery/1.3.0/schema.json": {
+    "file": "item_report_definition_semanticQuery_1.3.0_schema.json",
+    "sha256": "ca5daaf9360ef508b1813f433a339bf6b6634157c65183095af723830fab6187"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/formattingObjectDefinitions/1.4.0/schema.json": {
+    "file": "item_report_definition_formattingObjectDefinitions_1.4.0_schema.json",
+    "sha256": "affe69c38a2413c8a75c7963a07057abcda669c4e08173604cbee29f0d7ec074"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualConfiguration/2.1.0/schema-embedded.json": {
+    "file": "item_report_definition_visualConfiguration_2.1.0_schema-embedded.json",
+    "sha256": "9bc500a291e6081f26909a2e3c2c1b2fd10da77e99e5e9c56870d2ce52312316"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/semanticQuery/1.0.0/schema.json": {
+    "file": "item_report_definition_semanticQuery_1.0.0_schema.json",
+    "sha256": "c5cb7e79f139757d27003ee59964d9e48c4d0a3a26c6608a03444da171a056ef"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/formattingObjectDefinitions/1.0.0/schema.json": {
+    "file": "item_report_definition_formattingObjectDefinitions_1.0.0_schema.json",
+    "sha256": "2b7a8ef80228c4cda4c21dffa628e3f784ca162db607ac0b6034ee0fd347bff0"
+  },
+  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/semanticQuery/1.2.0/schema.json": {
+    "file": "item_report_definition_semanticQuery_1.2.0_schema.json",
+    "sha256": "fb436f000694184e67d5de071b00b71790379c32de1bac84a18a31693ef98cef"
+  }
+}

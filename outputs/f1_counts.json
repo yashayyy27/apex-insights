@@ -1,0 +1,15 @@
+{
+  "DimRace": 46,
+  "DimDriver": 25,
+  "DimConstructor": 12,
+  "DimCircuit": 24,
+  "DimSeason": 2,
+  "FactRaceResults": 919,
+  "FactQualifying": 919,
+  "FactSprintResults": 240,
+  "FactPitStops": 1737,
+  "FactLaps": 2362,
+  "FactDriverStandings": 46,
+  "FactConstructorStandings": 20,
+  "DimDate": 731
+}

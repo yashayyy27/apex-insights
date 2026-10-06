@@ -1,0 +1,35 @@
+{
+  "seed": 20261006,
+  "grain": "Daily SKU/customer unless documented otherwise",
+  "currency": "AUD ex GST",
+  "rows": {
+    "DimDate": 731,
+    "DimProduct": 24,
+    "DimCategory": 5,
+    "DimCustomer": 15,
+    "DimChannel": 5,
+    "DimRegion": 3,
+    "FactSales": 248580,
+    "FactDistribution": 248580,
+    "FactTargets": 248580,
+    "FactPromotion": 31075,
+    "FactMarket": 54825,
+    "FactInnovationPanel": 930
+  },
+  "all_brands": "FICTIONAL",
+  "all_rows": "SYNTHETIC",
+  "assumptions": {
+    "category_annual_volume_change": {
+      "Sparkling": 0.015,
+      "Energy": 0.16,
+      "Water": 0.03,
+      "Sports": 0.075,
+      "Coffee": -0.1
+    },
+    "price_inflation": 0.035,
+    "cost_inflation": 0.055,
+    "year2_target_growth": 0.06,
+    "baseline": "Shared-shock generator counterfactual, excludes promotion lift",
+    "no_causal_inference": true
+  }
+}

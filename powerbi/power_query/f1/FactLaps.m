@@ -1,0 +1,1 @@
+fnLoadCsv("f1/FactLaps.csv",{{"RaceKey",Int64.Type},{"DriverKey",type text},{"Lap",Int64.Type},{"Position",Int64.Type},{"LapSeconds",type number},{"DataClass",type text},{"ConstructorKey",type text}},{"RaceKey","DriverKey","Lap"},{},{"PUBLIC","PUBLIC_DERIVED"})

@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+node_modules
+data/processed/apex.sqlite
+**/.pbi/
+*.pbix
+*.abf
+outputs/*.log
+outputs/matplotlib_cache/
+*.inspect.ndjson

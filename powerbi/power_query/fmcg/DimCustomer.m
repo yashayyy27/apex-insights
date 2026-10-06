@@ -1,0 +1,1 @@
+fnLoadCsv("fmcg/DimCustomer.csv",{{"CustomerKey",Int64.Type},{"Customer",type text},{"ChannelKey",Int64.Type},{"RegionKey",Int64.Type},{"EligibleStores",Int64.Type},{"DataClass",type text}},{"CustomerKey"},{},{"SYNTHETIC"})

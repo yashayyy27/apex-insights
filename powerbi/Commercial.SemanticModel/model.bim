@@ -1,0 +1,2211 @@
+{
+  "name": "Commercial",
+  "compatibilityLevel": 1601,
+  "model": {
+    "culture": "en-AU",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-AU",
+    "tables": [
+      {
+        "name": "DimCategory",
+        "columns": [
+          {
+            "name": "CategoryKey",
+            "dataType": "int64",
+            "sourceColumn": "CategoryKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "8642a75f-a9f1-5be9-a446-ebde8afc6bc5"
+          },
+          {
+            "name": "Category",
+            "dataType": "string",
+            "sourceColumn": "Category",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "8ed683e2-97a8-564d-9a58-100af6d099fc"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "4f09ab6a-8088-5a80-a537-b2ea76eabfa3"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCategory",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"fmcg/DimCategory.csv\",{{\"CategoryKey\",Int64.Type},{\"Category\",type text},{\"DataClass\",type text}},{\"CategoryKey\"},{},{\"SYNTHETIC\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "lineageTag": "4e6d4732-c5b1-5b87-8ca1-92bac0f9ad99"
+      },
+      {
+        "name": "DimChannel",
+        "columns": [
+          {
+            "name": "ChannelKey",
+            "dataType": "int64",
+            "sourceColumn": "ChannelKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "b00b114b-0141-5787-85ae-0166d644e9ce"
+          },
+          {
+            "name": "Channel",
+            "dataType": "string",
+            "sourceColumn": "Channel",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "cd9582eb-1713-5da6-b0a7-fea7ca6cc0ed"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "96f5074b-34a4-5db9-a0d3-dec5bc8d4029"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimChannel",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"fmcg/DimChannel.csv\",{{\"ChannelKey\",Int64.Type},{\"Channel\",type text},{\"DataClass\",type text}},{\"ChannelKey\"},{},{\"SYNTHETIC\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "lineageTag": "ef779548-94c6-5dec-903c-e0e121fb4961"
+      },
+      {
+        "name": "DimCustomer",
+        "columns": [
+          {
+            "name": "CustomerKey",
+            "dataType": "int64",
+            "sourceColumn": "CustomerKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "d6066479-b102-5854-b237-9e5bd8a012f2"
+          },
+          {
+            "name": "Customer",
+            "dataType": "string",
+            "sourceColumn": "Customer",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "7b4e958a-85ba-5184-be14-08ddaa42eb27"
+          },
+          {
+            "name": "ChannelKey",
+            "dataType": "int64",
+            "sourceColumn": "ChannelKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "855aa6b8-5913-56c3-8429-6e24bf6231ad"
+          },
+          {
+            "name": "RegionKey",
+            "dataType": "int64",
+            "sourceColumn": "RegionKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "82339b28-4378-5033-aebd-f5aebcea8def"
+          },
+          {
+            "name": "EligibleStores",
+            "dataType": "int64",
+            "sourceColumn": "EligibleStores",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "2c0bbca2-acc9-52f9-a47b-e38dc707be4f"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "653217f3-94d1-5f53-8de0-371f99dbdeb7"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCustomer",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"fmcg/DimCustomer.csv\",{{\"CustomerKey\",Int64.Type},{\"Customer\",type text},{\"ChannelKey\",Int64.Type},{\"RegionKey\",Int64.Type},{\"EligibleStores\",Int64.Type},{\"DataClass\",type text}},{\"CustomerKey\"},{},{\"SYNTHETIC\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "lineageTag": "b6dfaa84-20b7-54bf-9ea2-28f3bfcc65e8"
+      },
+      {
+        "name": "DimDate",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "isKey": true,
+            "lineageTag": "87b13cfa-d274-53ac-91c1-0c243cc09c94"
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "sourceColumn": "Year",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "1f1ba111-e87c-5222-9eaf-b8ce26f7509b"
+          },
+          {
+            "name": "MonthNumber",
+            "dataType": "int64",
+            "sourceColumn": "MonthNumber",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "9dda8288-cfd6-5add-9b0f-f546fd61225c"
+          },
+          {
+            "name": "Month",
+            "dataType": "string",
+            "sourceColumn": "Month",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "sortByColumn": "MonthNumber",
+            "lineageTag": "36689cd9-ec13-54f3-b9a0-f6f42e7befa0"
+          },
+          {
+            "name": "YearMonth",
+            "dataType": "string",
+            "sourceColumn": "YearMonth",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "147e38e1-686b-585f-94ff-50907b93b986"
+          },
+          {
+            "name": "Quarter",
+            "dataType": "string",
+            "sourceColumn": "Quarter",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "d396527a-dce4-5eae-be56-7ad8b4051fc0"
+          },
+          {
+            "name": "WeekStart",
+            "dataType": "dateTime",
+            "sourceColumn": "WeekStart",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "6e80915b-5c53-5d06-ae6b-0f3cf40fedf6"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "150f09ac-0c6d-5efc-88d3-938fb1af8164"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimDate",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnCalendar(#date(2023,1,1),#date(2024,12,31),\"SYNTHETIC\")"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "dataCategory": "Time",
+        "lineageTag": "9e74adc3-9bcd-532b-b80e-86ba663c5fca"
+      },
+      {
+        "name": "DimProduct",
+        "columns": [
+          {
+            "name": "ProductKey",
+            "dataType": "int64",
+            "sourceColumn": "ProductKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "26b52a86-098c-55c3-9df8-634ab64de8ef"
+          },
+          {
+            "name": "Product",
+            "dataType": "string",
+            "sourceColumn": "Product",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "6606e21c-03f8-553e-92f4-367cd1c3ba6d"
+          },
+          {
+            "name": "Brand",
+            "dataType": "string",
+            "sourceColumn": "Brand",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "3e2b08c5-2258-5010-b1c9-0409e443031f"
+          },
+          {
+            "name": "CategoryKey",
+            "dataType": "int64",
+            "sourceColumn": "CategoryKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "2e26beb7-c464-506c-a40b-b7721b770063"
+          },
+          {
+            "name": "Category",
+            "dataType": "string",
+            "sourceColumn": "Category",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "4612a667-1bf1-57de-8b1e-33cad09715c5"
+          },
+          {
+            "name": "PackMl",
+            "dataType": "int64",
+            "sourceColumn": "PackMl",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "4a66abb4-3ffb-5c18-9356-7c7a2c9e7eba"
+          },
+          {
+            "name": "Innovation",
+            "dataType": "int64",
+            "sourceColumn": "Innovation",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "69ad8457-3d34-507b-bbe5-784cddac6001"
+          },
+          {
+            "name": "LaunchDate",
+            "dataType": "dateTime",
+            "sourceColumn": "LaunchDate",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "d7337928-5373-530f-b92b-78de74544689"
+          },
+          {
+            "name": "RegularPrice",
+            "dataType": "double",
+            "sourceColumn": "RegularPrice",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "9f96487c-89b1-511a-9b15-26c0fedb522a"
+          },
+          {
+            "name": "UnitCost",
+            "dataType": "double",
+            "sourceColumn": "UnitCost",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "62efc2bc-49e7-5c48-8f28-c0bc2f419bcb"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "5d8615a0-7f47-5452-b5cf-5f04c0b35d1c"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimProduct",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Base = fnLoadCsv(\"fmcg/DimProduct.csv\",{{\"ProductKey\",Int64.Type},{\"Product\",type text},{\"Brand\",type text},{\"CategoryKey\",Int64.Type},{\"Category\",type text},{\"PackMl\",Int64.Type},{\"Innovation\",Int64.Type},{\"LaunchDate\",type date},{\"RegularPrice\",type number},{\"UnitCost\",type number},{\"DataClass\",type text}},{\"ProductKey\"},{},{\"SYNTHETIC\"}),\n    Joined = Table.NestedJoin(Base,{\"CategoryKey\"},DimCategory,{\"CategoryKey\"},\"CategoryMap\",JoinKind.LeftOuter),\n    BadMappings = Table.SelectRows(Joined,each Table.RowCount([CategoryMap])<>1),\n    Checked = if Table.RowCount(BadMappings)>0 then error \"Invalid category mapping\" else Joined,\n    NoOldCategory = Table.RemoveColumns(Checked,{\"Category\"}),\n    Result = Table.ExpandTableColumn(NoOldCategory,\"CategoryMap\",{\"Category\"},{\"Category\"})\nin Result"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "lineageTag": "e3bd5d2c-0642-589a-899a-7ceba09ae296"
+      },
+      {
+        "name": "DimRegion",
+        "columns": [
+          {
+            "name": "RegionKey",
+            "dataType": "int64",
+            "sourceColumn": "RegionKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "fde2cce3-74b6-5b56-b159-f8dc54169107"
+          },
+          {
+            "name": "Region",
+            "dataType": "string",
+            "sourceColumn": "Region",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "9a00f668-e495-56b9-8fc4-2bae76ac2b91"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "cdcc5f27-82d0-5fa8-9c2d-30695b3ae525"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimRegion",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"fmcg/DimRegion.csv\",{{\"RegionKey\",Int64.Type},{\"Region\",type text},{\"DataClass\",type text}},{\"RegionKey\"},{},{\"SYNTHETIC\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "lineageTag": "d58790f2-cc03-5ebb-a697-2110740570d9"
+      },
+      {
+        "name": "FactDistribution",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "efb16548-7c71-5871-83e5-9cb52eb197de"
+          },
+          {
+            "name": "ProductKey",
+            "dataType": "int64",
+            "sourceColumn": "ProductKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "2b7623e3-1464-5b98-9221-5f8d794fa16a"
+          },
+          {
+            "name": "CategoryKey",
+            "dataType": "int64",
+            "sourceColumn": "CategoryKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "8fcaa975-071f-5eb2-a397-e780e7b16405"
+          },
+          {
+            "name": "CustomerKey",
+            "dataType": "int64",
+            "sourceColumn": "CustomerKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "6c96e3d2-7a00-5034-a357-182f2fd97951"
+          },
+          {
+            "name": "ChannelKey",
+            "dataType": "int64",
+            "sourceColumn": "ChannelKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "9649dcd1-00d1-5868-af27-42bca86c3c2c"
+          },
+          {
+            "name": "RegionKey",
+            "dataType": "int64",
+            "sourceColumn": "RegionKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "8a929746-6220-527a-b03a-c32aab703994"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "ece08645-212b-5f14-9104-629e8a279812"
+          },
+          {
+            "name": "ActiveStoreDays",
+            "dataType": "int64",
+            "sourceColumn": "ActiveStoreDays",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "b870a0a6-ffb7-5533-82e0-966c9feceb4c"
+          },
+          {
+            "name": "EligibleStoreDays",
+            "dataType": "int64",
+            "sourceColumn": "EligibleStoreDays",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "771bf35b-5e7f-5fea-a69a-435023c5993a"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactDistribution",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"fmcg/FactDistribution.csv\",{{\"Date\",type date},{\"ProductKey\",Int64.Type},{\"CategoryKey\",Int64.Type},{\"CustomerKey\",Int64.Type},{\"ChannelKey\",Int64.Type},{\"RegionKey\",Int64.Type},{\"DataClass\",type text},{\"ActiveStoreDays\",Int64.Type},{\"EligibleStoreDays\",Int64.Type}},{\"Date\",\"ProductKey\",\"CustomerKey\"},{},{\"SYNTHETIC\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "lineageTag": "bb505ba4-57be-5598-a418-7fa1f2ab6be7"
+      },
+      {
+        "name": "FactInnovationPanel",
+        "columns": [
+          {
+            "name": "ProductKey",
+            "dataType": "int64",
+            "sourceColumn": "ProductKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "66b721bb-2ff9-55ed-8176-62c991b145b9"
+          },
+          {
+            "name": "CategoryKey",
+            "dataType": "int64",
+            "sourceColumn": "CategoryKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "1f46a0c4-3e84-5098-af6b-fb86526fdc15"
+          },
+          {
+            "name": "CustomerKey",
+            "dataType": "int64",
+            "sourceColumn": "CustomerKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "dd82692d-b042-58aa-8e41-bcec3e3afc3f"
+          },
+          {
+            "name": "ChannelKey",
+            "dataType": "int64",
+            "sourceColumn": "ChannelKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "752a6e2c-1c5c-5509-b8fa-bfd733ec1184"
+          },
+          {
+            "name": "RegionKey",
+            "dataType": "int64",
+            "sourceColumn": "RegionKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "51d8d7a3-fd57-505c-9b90-aab2b02e41e8"
+          },
+          {
+            "name": "Trials",
+            "dataType": "int64",
+            "sourceColumn": "Trials",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "3728a0bc-0354-5921-a348-bbbfe10d99a5"
+          },
+          {
+            "name": "RepeatWithin28d",
+            "dataType": "int64",
+            "sourceColumn": "RepeatWithin28d",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "fa87c116-ba7c-5689-8a29-89cabc41916b"
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "adfaad97-97fe-594d-a829-9f1f302c0ca9"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "b2b213bb-0178-5bda-b4ab-34a2d8764440"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactInnovationPanel",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"fmcg/FactInnovationPanel.csv\",{{\"ProductKey\",Int64.Type},{\"CategoryKey\",Int64.Type},{\"CustomerKey\",Int64.Type},{\"ChannelKey\",Int64.Type},{\"RegionKey\",Int64.Type},{\"Trials\",Int64.Type},{\"RepeatWithin28d\",Int64.Type},{\"Date\",type date},{\"DataClass\",type text}},{\"Date\",\"ProductKey\",\"CustomerKey\"},{},{\"SYNTHETIC\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "lineageTag": "ae781e9f-f681-565d-bbd7-d70ef92b10f1"
+      },
+      {
+        "name": "FactMarket",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "a6ef934d-b190-590c-983a-8d15b1d2cae1"
+          },
+          {
+            "name": "CategoryKey",
+            "dataType": "int64",
+            "sourceColumn": "CategoryKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "450e941f-ab60-5e08-ab5f-3fd8b1334056"
+          },
+          {
+            "name": "ChannelKey",
+            "dataType": "int64",
+            "sourceColumn": "ChannelKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "8bbff6fb-e18e-5bce-b14f-0a0c8641fc20"
+          },
+          {
+            "name": "RegionKey",
+            "dataType": "int64",
+            "sourceColumn": "RegionKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "2eb40d1f-1e8d-568a-a3ff-729d6a511c9d"
+          },
+          {
+            "name": "PortfolioRevenue",
+            "dataType": "double",
+            "sourceColumn": "PortfolioRevenue",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "70b92ba1-1515-5482-aa00-81fab0ffdd21"
+          },
+          {
+            "name": "CompetitorRevenue",
+            "dataType": "double",
+            "sourceColumn": "CompetitorRevenue",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "e8f85be6-950b-5a15-b9ff-4415301c9685"
+          },
+          {
+            "name": "MarketRevenue",
+            "dataType": "double",
+            "sourceColumn": "MarketRevenue",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "5caa6542-ed9f-5cd3-908f-47f288e1d4c0"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "cbf66bd4-b859-5ca6-bbf4-119c475bf2c5"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactMarket",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"fmcg/FactMarket.csv\",{{\"Date\",type date},{\"CategoryKey\",Int64.Type},{\"ChannelKey\",Int64.Type},{\"RegionKey\",Int64.Type},{\"PortfolioRevenue\",type number},{\"CompetitorRevenue\",type number},{\"MarketRevenue\",type number},{\"DataClass\",type text}},{\"Date\",\"CategoryKey\",\"ChannelKey\",\"RegionKey\"},{},{\"SYNTHETIC\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "lineageTag": "1197e148-dd2b-5b05-87e6-321e81c9569a"
+      },
+      {
+        "name": "FactPromotion",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "0ff766f8-d260-5efa-9e39-5e756e979f13"
+          },
+          {
+            "name": "ProductKey",
+            "dataType": "int64",
+            "sourceColumn": "ProductKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "baae8114-5f7f-5ca0-8cb9-fdca3f118b41"
+          },
+          {
+            "name": "CategoryKey",
+            "dataType": "int64",
+            "sourceColumn": "CategoryKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "0869e8cf-9006-5b45-92ee-425a0c0cc1a4"
+          },
+          {
+            "name": "CustomerKey",
+            "dataType": "int64",
+            "sourceColumn": "CustomerKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "290e5f12-03fa-5c30-b9d6-0426d1e5e753"
+          },
+          {
+            "name": "ChannelKey",
+            "dataType": "int64",
+            "sourceColumn": "ChannelKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "a3e6e88e-4fff-5a91-9a79-c79e1bd6a8a3"
+          },
+          {
+            "name": "RegionKey",
+            "dataType": "int64",
+            "sourceColumn": "RegionKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "d878a51a-376a-5794-b397-3743f43212e2"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "2c5f639f-7908-52a1-936a-18492dd43454"
+          },
+          {
+            "name": "CampaignKey",
+            "dataType": "string",
+            "sourceColumn": "CampaignKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "736cd96d-0d70-55ae-bdf4-0c2f01ef1107"
+          },
+          {
+            "name": "ActualUnits",
+            "dataType": "int64",
+            "sourceColumn": "ActualUnits",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "2e4c0c53-4411-5333-bcd8-98d59ddeda49"
+          },
+          {
+            "name": "BaselineUnits",
+            "dataType": "int64",
+            "sourceColumn": "BaselineUnits",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "9e8f6e03-f6d7-5713-867e-ecdf641d8ea7"
+          },
+          {
+            "name": "ActualRevenue",
+            "dataType": "double",
+            "sourceColumn": "ActualRevenue",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "484245be-6932-5db8-90d4-c1b9292606dc"
+          },
+          {
+            "name": "BaselineRevenue",
+            "dataType": "double",
+            "sourceColumn": "BaselineRevenue",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "7ae24dad-3544-5329-ae74-a2fc4f4e0398"
+          },
+          {
+            "name": "ActualGP",
+            "dataType": "double",
+            "sourceColumn": "ActualGP",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "105159a6-fc6f-555b-be8e-1e5ac79f65a3"
+          },
+          {
+            "name": "BaselineGP",
+            "dataType": "double",
+            "sourceColumn": "BaselineGP",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "771c3adb-e172-573b-bb95-e035192a80ab"
+          },
+          {
+            "name": "TradeSpend",
+            "dataType": "double",
+            "sourceColumn": "TradeSpend",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "4b9d3140-7dfa-5ce3-a7ff-72441235feb4"
+          },
+          {
+            "name": "DiscountDepth",
+            "dataType": "double",
+            "sourceColumn": "DiscountDepth",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "66bcf9ac-5b63-5d43-8875-71e06c358272"
+          },
+          {
+            "name": "IncrementalUnits",
+            "dataType": "int64",
+            "sourceColumn": "IncrementalUnits",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "57ddba01-7516-5c66-8b65-0acf947f8796"
+          },
+          {
+            "name": "NetIncrementalProfit",
+            "dataType": "double",
+            "sourceColumn": "NetIncrementalProfit",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "d4687074-073d-5660-bed0-deb76e738ea0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactPromotion",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"fmcg/FactPromotion.csv\",{{\"Date\",type date},{\"ProductKey\",Int64.Type},{\"CategoryKey\",Int64.Type},{\"CustomerKey\",Int64.Type},{\"ChannelKey\",Int64.Type},{\"RegionKey\",Int64.Type},{\"DataClass\",type text},{\"CampaignKey\",type text},{\"ActualUnits\",Int64.Type},{\"BaselineUnits\",Int64.Type},{\"ActualRevenue\",type number},{\"BaselineRevenue\",type number},{\"ActualGP\",type number},{\"BaselineGP\",type number},{\"TradeSpend\",type number},{\"DiscountDepth\",type number},{\"IncrementalUnits\",Int64.Type},{\"NetIncrementalProfit\",type number}},{\"Date\",\"ProductKey\",\"CustomerKey\"},{},{\"SYNTHETIC\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "lineageTag": "eb6a1e53-e31a-529e-a8d0-da3d57ebbb74"
+      },
+      {
+        "name": "FactSales",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "16105fbc-6d8a-5075-bece-058d71017edc"
+          },
+          {
+            "name": "ProductKey",
+            "dataType": "int64",
+            "sourceColumn": "ProductKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "52cc3806-61c9-53af-b2ed-1b9a78df3dd9"
+          },
+          {
+            "name": "CategoryKey",
+            "dataType": "int64",
+            "sourceColumn": "CategoryKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "1b939a27-f3cf-5d3b-959d-0832548defdb"
+          },
+          {
+            "name": "CustomerKey",
+            "dataType": "int64",
+            "sourceColumn": "CustomerKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "1eab98a0-0a13-5cca-875b-5845b5e70f66"
+          },
+          {
+            "name": "ChannelKey",
+            "dataType": "int64",
+            "sourceColumn": "ChannelKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "9a074b36-ebee-5d8d-b677-52f7bd6ca7b9"
+          },
+          {
+            "name": "RegionKey",
+            "dataType": "int64",
+            "sourceColumn": "RegionKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "e7f01d59-68dc-5cad-82b7-8f0cc651aad7"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "0bc878b6-c6f8-5542-a951-bbde936ac336"
+          },
+          {
+            "name": "Units",
+            "dataType": "int64",
+            "sourceColumn": "Units",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "52a3e039-6dbe-5e26-ac50-6327a4d5e4fc"
+          },
+          {
+            "name": "VolumeLitres",
+            "dataType": "double",
+            "sourceColumn": "VolumeLitres",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "53d3af7b-0d11-5e65-a3b1-967532e78b21"
+          },
+          {
+            "name": "NetPrice",
+            "dataType": "double",
+            "sourceColumn": "NetPrice",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "1cf5ce49-50d0-52ac-a3c7-2825b3b8f5da"
+          },
+          {
+            "name": "UnitCost",
+            "dataType": "double",
+            "sourceColumn": "UnitCost",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "d8d0524b-9691-56b4-b431-90716b4c7d1c"
+          },
+          {
+            "name": "Revenue",
+            "dataType": "double",
+            "sourceColumn": "Revenue",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "1be3ac36-0286-510d-a3b9-7a7b0257b0aa"
+          },
+          {
+            "name": "COGS",
+            "dataType": "double",
+            "sourceColumn": "COGS",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "f1776a3c-f3ee-597b-82e5-00cd3d20bd36"
+          },
+          {
+            "name": "GrossProfit",
+            "dataType": "double",
+            "sourceColumn": "GrossProfit",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "b211398b-4a76-51d5-b50c-4612c3236069"
+          },
+          {
+            "name": "PromotionFlag",
+            "dataType": "int64",
+            "sourceColumn": "PromotionFlag",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "c6449bd0-c1b9-533d-87d5-4121d860344a"
+          },
+          {
+            "name": "DiscountDepth",
+            "dataType": "double",
+            "sourceColumn": "DiscountDepth",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "a5064042-8b3b-59bc-9992-09d95b1f61ec"
+          },
+          {
+            "name": "TradeSpend",
+            "dataType": "double",
+            "sourceColumn": "TradeSpend",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "36b44265-a323-5d50-8ffc-0b5b6be21214"
+          },
+          {
+            "name": "Innovation",
+            "dataType": "int64",
+            "sourceColumn": "Innovation",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "eff11a4d-c3fd-5da5-9648-8ffbdb4a8511"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactSales",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"fmcg/FactSales.csv\",{{\"Date\",type date},{\"ProductKey\",Int64.Type},{\"CategoryKey\",Int64.Type},{\"CustomerKey\",Int64.Type},{\"ChannelKey\",Int64.Type},{\"RegionKey\",Int64.Type},{\"DataClass\",type text},{\"Units\",Int64.Type},{\"VolumeLitres\",type number},{\"NetPrice\",type number},{\"UnitCost\",type number},{\"Revenue\",type number},{\"COGS\",type number},{\"GrossProfit\",type number},{\"PromotionFlag\",Int64.Type},{\"DiscountDepth\",type number},{\"TradeSpend\",type number},{\"Innovation\",Int64.Type}},{\"Date\",\"ProductKey\",\"CustomerKey\"},{},{\"SYNTHETIC\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "lineageTag": "639277ef-2fec-5a74-ba48-cd6da2eafb8c"
+      },
+      {
+        "name": "FactTargets",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "e8b33533-a7e0-5441-910b-f5cf1c6c3a40"
+          },
+          {
+            "name": "ProductKey",
+            "dataType": "int64",
+            "sourceColumn": "ProductKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "bfa5312d-fe01-508a-9c74-9cc60708b973"
+          },
+          {
+            "name": "CategoryKey",
+            "dataType": "int64",
+            "sourceColumn": "CategoryKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "ffcc7ed8-38ec-503d-88e8-73e5e623b485"
+          },
+          {
+            "name": "CustomerKey",
+            "dataType": "int64",
+            "sourceColumn": "CustomerKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "682dd1c3-ed6d-5269-beed-67769cb55a9f"
+          },
+          {
+            "name": "ChannelKey",
+            "dataType": "int64",
+            "sourceColumn": "ChannelKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "1d58a4be-da5e-59b6-82a8-3c33adb93343"
+          },
+          {
+            "name": "RegionKey",
+            "dataType": "int64",
+            "sourceColumn": "RegionKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "02659e4e-14df-5ca5-986e-a2015a1843dd"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "ec59f95e-7abf-5b00-99d7-12f173412fc0"
+          },
+          {
+            "name": "TargetUnits",
+            "dataType": "int64",
+            "sourceColumn": "TargetUnits",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "d81f5671-7a76-5754-8e98-0a27a895bd73"
+          },
+          {
+            "name": "TargetRevenue",
+            "dataType": "double",
+            "sourceColumn": "TargetRevenue",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "61ba7602-a5bf-5420-a696-20114d12a798"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactTargets",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"fmcg/FactTargets.csv\",{{\"Date\",type date},{\"ProductKey\",Int64.Type},{\"CategoryKey\",Int64.Type},{\"CustomerKey\",Int64.Type},{\"ChannelKey\",Int64.Type},{\"RegionKey\",Int64.Type},{\"DataClass\",type text},{\"TargetUnits\",Int64.Type},{\"TargetRevenue\",type number}},{\"Date\",\"ProductKey\",\"CustomerKey\"},{},{\"SYNTHETIC\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "lineageTag": "2fb60473-feac-5fbf-a6bc-6215a249253a"
+      },
+      {
+        "name": "ActionCentre",
+        "columns": [
+          {
+            "name": "ActionKey",
+            "dataType": "int64",
+            "sourceColumn": "ActionKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "c298418c-7567-55d6-b46a-88b8f69a102c"
+          },
+          {
+            "name": "CategoryKey",
+            "dataType": "int64",
+            "sourceColumn": "CategoryKey",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "2cb9caaf-c1c4-54b1-afff-d7fb2e505323"
+          },
+          {
+            "name": "Scope",
+            "dataType": "string",
+            "sourceColumn": "Scope",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "4500cdd0-94b7-5049-8017-981f6c6d2fd8"
+          },
+          {
+            "name": "Observation",
+            "dataType": "string",
+            "sourceColumn": "Observation",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "99d767ff-2622-5f40-85f5-0404243a0c95"
+          },
+          {
+            "name": "Driver",
+            "dataType": "string",
+            "sourceColumn": "Driver",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "07c5d9a5-5142-56bf-ac67-371f8c8fca6e"
+          },
+          {
+            "name": "Implication",
+            "dataType": "string",
+            "sourceColumn": "Implication",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "f956c909-2370-568b-a5bc-84784f0d0670"
+          },
+          {
+            "name": "Action",
+            "dataType": "string",
+            "sourceColumn": "Action",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "67ca4802-1e3a-5f62-a32a-cb7985a26fe9"
+          },
+          {
+            "name": "Monitor",
+            "dataType": "string",
+            "sourceColumn": "Monitor",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "f09a8138-702a-5b72-843a-0190764042d1"
+          },
+          {
+            "name": "Evidence",
+            "dataType": "string",
+            "sourceColumn": "Evidence",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "eebff253-bffb-56e2-bab7-2b2a166aacaf"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "d86e5adc-0e75-54df-9612-1edf8f317f8a"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "ActionCentre",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"analytics/ActionCentre.csv\",{{\"ActionKey\",Int64.Type},{\"CategoryKey\",Int64.Type},{\"Scope\",type text},{\"Observation\",type text},{\"Driver\",type text},{\"Implication\",type text},{\"Action\",type text},{\"Monitor\",type text},{\"Evidence\",type text},{\"DataClass\",type text}},{\"ActionKey\"},{},{\"SYNTHETIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "SYNTHETIC"
+          }
+        ],
+        "lineageTag": "d3f35aca-d74c-56e5-882c-1b1f1ad7e643"
+      },
+      {
+        "name": "PublicContext",
+        "columns": [
+          {
+            "name": "Metric",
+            "dataType": "string",
+            "sourceColumn": "Metric",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "8e6bf065-1c90-5da8-b4de-c57c261af368"
+          },
+          {
+            "name": "Value",
+            "dataType": "double",
+            "sourceColumn": "Value",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "c344d55e-52fe-5879-8ca7-0322f6722989"
+          },
+          {
+            "name": "Basis",
+            "dataType": "string",
+            "sourceColumn": "Basis",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "9d538866-61c8-5453-a0a4-a07989f7320c"
+          },
+          {
+            "name": "Scope",
+            "dataType": "string",
+            "sourceColumn": "Scope",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "2c2a6347-1ede-52eb-8e7f-a4f44552869f"
+          },
+          {
+            "name": "SourceURL",
+            "dataType": "string",
+            "sourceColumn": "SourceURL",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "lineageTag": "39f357cd-c25f-5af4-8cdc-cd2bce6751dc"
+          },
+          {
+            "name": "PublishedDate",
+            "dataType": "dateTime",
+            "sourceColumn": "PublishedDate",
+            "summarizeBy": "none",
+            "isHidden": false,
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "7dc78d8d-843e-589b-9615-f36115e712e2"
+          },
+          {
+            "name": "DataClass",
+            "dataType": "string",
+            "sourceColumn": "DataClass",
+            "summarizeBy": "none",
+            "isHidden": true,
+            "lineageTag": "751112e8-f0c0-5b89-80d1-c3273630ee62"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "PublicContext",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "fnLoadCsv(\"public/PublicContext.csv\",{{\"Metric\",type text},{\"Value\",type number},{\"Basis\",type text},{\"Scope\",type text},{\"SourceURL\",type text},{\"PublishedDate\",type date},{\"DataClass\",type text}},{\"Metric\"},{},{\"PUBLIC\",\"PUBLIC_DERIVED\"})"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "DataProvenance",
+            "value": "PUBLIC / PUBLIC_DERIVED"
+          }
+        ],
+        "lineageTag": "a039c8b1-08c6-55ab-b27f-1fa15698cb7c"
+      },
+      {
+        "name": "Measures",
+        "columns": [
+          {
+            "name": "_Home",
+            "dataType": "int64",
+            "sourceColumn": "_Home",
+            "isHidden": true,
+            "lineageTag": "69563e3e-d45a-5231-a2c7-f563d31df1ac"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Measures",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "#table(type table [_Home=Int64.Type],{{0}})"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Revenue",
+            "expression": "SUM(FactSales[Revenue])",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "01 Performance",
+            "description": "Synthetic AUD ex GST net revenue; trade spend is accounted separately.",
+            "lineageTag": "7529e08d-010e-51c7-9fbd-398ca0b52919"
+          },
+          {
+            "name": "Units",
+            "expression": "SUM(FactSales[Units])",
+            "formatString": "#,0",
+            "displayFolder": "01 Performance",
+            "description": "Individual packs sold, not unit cases.",
+            "lineageTag": "9aeaadf1-46dd-53b7-b28f-35b247adb55a"
+          },
+          {
+            "name": "Volume Litres",
+            "expression": "SUM(FactSales[VolumeLitres])",
+            "formatString": "#,0",
+            "displayFolder": "01 Performance",
+            "description": "Units times pack millilitres / 1000.",
+            "lineageTag": "8451d43f-f6d7-5646-85df-1a4f7ea34ff3"
+          },
+          {
+            "name": "COGS",
+            "expression": "SUM(FactSales[COGS])",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "01 Performance",
+            "description": "Simulated variable product cost, excluding trade spend.",
+            "lineageTag": "f8493c72-223a-59e4-ba50-ae6ccd143070"
+          },
+          {
+            "name": "Gross Profit",
+            "expression": "[Revenue] - [COGS]",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "01 Performance",
+            "description": "Before trade spend and overheads.",
+            "lineageTag": "bdb9205c-5234-582c-85ac-24077bbbfd49"
+          },
+          {
+            "name": "Gross Margin %",
+            "expression": "DIVIDE([Gross Profit],[Revenue])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "01 Performance",
+            "description": "Ratio of totals, never an average of row percentages.",
+            "lineageTag": "b6ffdf16-e6ea-59c4-96f9-00a37733e863"
+          },
+          {
+            "name": "Average Selling Price",
+            "expression": "DIVIDE([Revenue],[Units])",
+            "formatString": "$0.00",
+            "displayFolder": "01 Performance",
+            "description": "AUD per pack. Mix effects mean it is not a pure price index.",
+            "lineageTag": "f456430d-6b60-5854-9771-7ba22063c1c9"
+          },
+          {
+            "name": "Revenue LY",
+            "expression": "CALCULATE([Revenue], SAMEPERIODLASTYEAR(DimDate[Date]))",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "02 Time",
+            "description": "Same calendar dates one year earlier; first-year comparison is blank.",
+            "lineageTag": "e7c49ec3-7d96-53af-a5f3-6e39daa57ef0"
+          },
+          {
+            "name": "Revenue YoY %",
+            "expression": "IF(HASONEVALUE(DimDate[Year]),DIVIDE([Revenue] - [Revenue LY],[Revenue LY]))",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "02 Time",
+            "description": "Growth relative to matching prior-year revenue; blank unless one calendar year is selected.",
+            "lineageTag": "1c197425-7e78-53c1-9359-b7b45c829a04"
+          },
+          {
+            "name": "Revenue YTD",
+            "expression": "CALCULATE([Revenue], DATESYTD(DimDate[Date]))",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "02 Time",
+            "description": "Calendar-year cumulative revenue.",
+            "lineageTag": "406b9e77-4d82-57ac-ba14-b39958641608"
+          },
+          {
+            "name": "Volume LY",
+            "expression": "CALCULATE([Volume Litres], DATEADD(DimDate[Date],-1,YEAR))",
+            "formatString": "#,0",
+            "displayFolder": "02 Time",
+            "description": "Calendar-aligned prior-year volume.",
+            "lineageTag": "3e738971-6ef2-5073-b33b-1b8bea0786d4"
+          },
+          {
+            "name": "Volume Growth %",
+            "expression": "IF(HASONEVALUE(DimDate[Year]),DIVIDE([Volume Litres]-[Volume LY],[Volume LY]))",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "02 Time",
+            "description": "Litres growth; blank unless one calendar year is selected.",
+            "lineageTag": "73dbd283-09ee-5d68-8eed-6805d2a98dcc"
+          },
+          {
+            "name": "Rolling 4 Week Sales",
+            "expression": "VAR EndDate = MAX(DimDate[Date]) RETURN CALCULATE([Revenue],DATESINPERIOD(DimDate[Date],EndDate,-28,DAY))",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "02 Time",
+            "description": "28 calendar days inclusive of the selected end date.",
+            "lineageTag": "ff45c784-10f4-5a30-94d2-f0c15d88f1e2"
+          },
+          {
+            "name": "Rolling 13 Week Sales",
+            "expression": "VAR EndDate = MAX(DimDate[Date]) RETURN CALCULATE([Revenue],DATESINPERIOD(DimDate[Date],EndDate,-91,DAY))",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "02 Time",
+            "description": "91 calendar days; periods near start of dataset are partial.",
+            "lineageTag": "636072db-6a21-5f9a-921b-99311af9e5c2"
+          },
+          {
+            "name": "Target Revenue",
+            "expression": "SUM(FactTargets[TargetRevenue])",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "03 Plan",
+            "description": "Independent pre-period expectation; same product/customer/date grain as sales.",
+            "lineageTag": "9606d7fc-928e-5809-bd86-be937e12b942"
+          },
+          {
+            "name": "Revenue vs Target",
+            "expression": "[Revenue]-[Target Revenue]",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "03 Plan",
+            "description": "Absolute AUD gap.",
+            "lineageTag": "e88ca6fa-588d-5e71-bf07-9f709116b6d0"
+          },
+          {
+            "name": "Target Attainment %",
+            "expression": "DIVIDE([Revenue],[Target Revenue])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "03 Plan",
+            "description": "Ratios only within the same fact scope.",
+            "lineageTag": "398ec6b5-509f-5d01-9648-2a147dc6b31a"
+          },
+          {
+            "name": "Revenue Contribution %",
+            "expression": "DIVIDE([Revenue],CALCULATE([Revenue],REMOVEFILTERS(DimProduct),REMOVEFILTERS(DimCategory)))",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "04 Category",
+            "description": "Contribution within selected date/channel/region/customer scope; removes product/category filters.",
+            "lineageTag": "962cec5f-3a0b-502f-80a5-1e78e6e50ad2"
+          },
+          {
+            "name": "Selected Product Contribution %",
+            "expression": "DIVIDE([Revenue],CALCULATE([Revenue],ALLSELECTED(DimProduct)))",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "04 Category",
+            "description": "Share of products in current user selection; keeps category and other dimensions.",
+            "lineageTag": "151d8620-790d-59f6-b111-ba8c0ed07297"
+          },
+          {
+            "name": "Market Revenue",
+            "expression": "IF(ISFILTERED(DimProduct) || ISFILTERED(DimCustomer),BLANK(),SUM(FactMarket[MarketRevenue]))",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "04 Category",
+            "description": "Synthetic market at date/category/channel/region grain. Blank under SKU or customer filters.",
+            "lineageTag": "39884b53-42f8-5526-b05d-7271311d3bfd"
+          },
+          {
+            "name": "Simulated Market Share %",
+            "expression": "DIVIDE([Revenue],[Market Revenue])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "04 Category",
+            "description": "Generated market dollars denominator; no factual CCEP market-share claim.",
+            "lineageTag": "93334f74-9313-588c-893e-3b6d869a7bb8"
+          },
+          {
+            "name": "Simulated Share LY",
+            "expression": "CALCULATE([Simulated Market Share %],SAMEPERIODLASTYEAR(DimDate[Date]))",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "04 Category",
+            "description": "Matching calendar-year simulated share.",
+            "lineageTag": "5cd817cd-835d-5e7a-8cc4-e97048b1cfb4"
+          },
+          {
+            "name": "Share Change pp",
+            "expression": "VAR CurrentShare=[Simulated Market Share %] VAR PriorShare=[Simulated Share LY] RETURN IF(HASONEVALUE(DimDate[Year])&&NOT ISBLANK(CurrentShare)&&NOT ISBLANK(PriorShare),100*(CurrentShare-PriorShare))",
+            "formatString": "0.00 \"pp\"",
+            "displayFolder": "04 Category",
+            "description": "Percentage-point change; blank if either share is unavailable.",
+            "lineageTag": "1176201c-dcee-5f6a-baa4-60a430cf38a8"
+          },
+          {
+            "name": "Active Store Days",
+            "expression": "SUM(FactDistribution[ActiveStoreDays])",
+            "formatString": "#,0",
+            "displayFolder": "05 Distribution",
+            "description": "Additive SKU-store-days; not distinct physical stores.",
+            "lineageTag": "e69a0899-e6bb-5520-8ae9-c01e0487bbb2"
+          },
+          {
+            "name": "Eligible Store Days",
+            "expression": "SUM(FactDistribution[EligibleStoreDays])",
+            "formatString": "#,0",
+            "displayFolder": "05 Distribution",
+            "description": "Universe of eligible SKU-store-day opportunities.",
+            "lineageTag": "03deb28a-d57a-5e68-809a-445e6c555ce4"
+          },
+          {
+            "name": "Distribution %",
+            "expression": "DIVIDE([Active Store Days],[Eligible Store Days])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "05 Distribution",
+            "description": "Weighted distribution proxy. Does not estimate ACV distribution.",
+            "lineageTag": "6ab40f5b-8a52-55f8-87d4-3616905ee8ba"
+          },
+          {
+            "name": "Velocity",
+            "expression": "DIVIDE([Units],[Active Store Days])",
+            "formatString": "0.00",
+            "displayFolder": "05 Distribution",
+            "description": "Units per active SKU-store-day; preserves exposure when summing dates/SKUs.",
+            "lineageTag": "9d9a8fbd-e3ac-5ca8-b4db-986e1baa079a"
+          },
+          {
+            "name": "Revenue per Active Store Day",
+            "expression": "DIVIDE([Revenue],[Active Store Days])",
+            "formatString": "$0.00",
+            "displayFolder": "05 Distribution",
+            "description": "Revenue per active SKU-store-day.",
+            "lineageTag": "2da94c61-a8a8-584f-a5fc-8c38035c94ac"
+          },
+          {
+            "name": "SKU Revenue Rank",
+            "expression": "RANKX(ALLSELECTED(DimProduct[Product]),[Revenue],,DESC,DENSE)",
+            "formatString": "0",
+            "displayFolder": "05 Distribution",
+            "description": "Rank within selected product universe.",
+            "lineageTag": "32fd5257-7acd-563d-bc28-1be65a1c910a"
+          },
+          {
+            "name": "Trade Spend",
+            "expression": "SUM(FactSales[TradeSpend])",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "06 Promotion",
+            "description": "Campaign execution spend; discounts are already inside net revenue.",
+            "lineageTag": "e856890a-074c-5d74-9e75-8e86be9e0f04"
+          },
+          {
+            "name": "Baseline Units",
+            "expression": "SUM(FactPromotion[BaselineUnits])",
+            "formatString": "#,0",
+            "displayFolder": "06 Promotion",
+            "description": "Generator counterfactual only for promoted product/customer/days.",
+            "lineageTag": "e01519dd-41bd-5e00-b0b2-1d59f28a6678"
+          },
+          {
+            "name": "Promoted Units",
+            "expression": "SUM(FactPromotion[ActualUnits])",
+            "formatString": "#,0",
+            "displayFolder": "06 Promotion",
+            "description": "Same promoted population as baseline.",
+            "lineageTag": "a947fd32-f54c-59ef-b323-805767736d04"
+          },
+          {
+            "name": "Incremental Units",
+            "expression": "[Promoted Units]-[Baseline Units]",
+            "formatString": "#,0",
+            "displayFolder": "06 Promotion",
+            "description": "Simulated incremental units, not real experimentally measured lift.",
+            "lineageTag": "9f7745d4-08d1-5582-8ce8-3a561f49b980"
+          },
+          {
+            "name": "Promotion Lift %",
+            "expression": "DIVIDE([Incremental Units],[Baseline Units])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "06 Promotion",
+            "description": "Counterfactual same-period simulated lift.",
+            "lineageTag": "2c91e05d-98c4-52b8-b185-f1c2eba48061"
+          },
+          {
+            "name": "Incremental Sales",
+            "expression": "SUM(FactPromotion[ActualRevenue])-SUM(FactPromotion[BaselineRevenue])",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "06 Promotion",
+            "description": "Net revenue delta includes lower realised prices.",
+            "lineageTag": "95c16852-5578-5985-bc28-368d1159a207"
+          },
+          {
+            "name": "Net Incremental Promotion Profit",
+            "expression": "SUM(FactPromotion[NetIncrementalProfit])",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "06 Promotion",
+            "description": "Actual GP minus baseline GP minus trade spend; no double-counted discount expense.",
+            "lineageTag": "091b9011-c418-5252-b1a8-87d12d8ff082"
+          },
+          {
+            "name": "Promotion ROI",
+            "expression": "DIVIDE([Net Incremental Promotion Profit],SUM(FactPromotion[TradeSpend]))",
+            "formatString": "0.00\"x\"",
+            "displayFolder": "06 Promotion",
+            "description": "Net incremental profit per AUD of execution spend; can be negative.",
+            "lineageTag": "0eaff288-a2d8-51e0-b62e-ac8ae3a0c92c"
+          },
+          {
+            "name": "Discount Depth %",
+            "expression": "DIVIDE(SUMX(FactPromotion,FactPromotion[DiscountDepth]*FactPromotion[ActualUnits]),[Promoted Units])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "06 Promotion",
+            "description": "Unit-weighted discount depth for promoted observations only.",
+            "lineageTag": "b02c3d74-2bfb-5ee4-b5fd-fe3508cadb73"
+          },
+          {
+            "name": "Innovation Revenue",
+            "expression": "CALCULATE([Revenue],KEEPFILTERS(DimProduct[Innovation]=1))",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "07 Innovation",
+            "description": "Sales from the two simulated 2024 launches.",
+            "lineageTag": "7a0c36a0-7b75-5c31-a061-aeaa3f14b236"
+          },
+          {
+            "name": "Innovation Contribution %",
+            "expression": "DIVIDE([Innovation Revenue],[Revenue])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "07 Innovation",
+            "description": "Launch revenue share of selected revenue.",
+            "lineageTag": "84d53240-2460-5e76-9b33-ddd340847e0b"
+          },
+          {
+            "name": "Cohort Repeat Rate %",
+            "expression": "DIVIDE(SUM(FactInnovationPanel[RepeatWithin28d]),SUM(FactInnovationPanel[Trials]))",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "07 Innovation",
+            "description": "Trials-weighted 28-day repeat; cohorts with incomplete follow-up excluded in ETL.",
+            "lineageTag": "225cf369-3f9f-5b96-aa43-ee5c1873c9b8"
+          },
+          {
+            "name": "Distribution Opportunity Revenue",
+            "expression": "VAR CurrentDist=[Distribution %] VAR DesiredDist=SELECTEDVALUE(DistributionGoal[Value],0.70) RETURN IF(CurrentDist>0,[Revenue]*MAX(0,DesiredDist-CurrentDist)/CurrentDist)",
+            "formatString": "$#,0;($#,0);$0",
+            "displayFolder": "08 Scenarios",
+            "description": "SIMULATION: same velocity, price and period, incremental distribution only; no cannibalisation or costs.",
+            "lineageTag": "8e29f8e8-2b52-534e-b48d-59dcba984e51"
+          },
+          {
+            "name": "Selected KPI",
+            "expression": "SWITCH(SELECTEDVALUE(KPISelector[KPI],\"Revenue\"),\"Revenue\",[Revenue],\"Gross margin\",[Gross Margin %],\"Velocity\",[Velocity],\"Target attainment\",[Target Attainment %])",
+            "formatString": "#,0.0",
+            "displayFolder": "08 Scenarios",
+            "description": "Disconnected KPI selector; dynamic format keeps money, percentages and exposure distinct.",
+            "formatStringDefinition": {
+              "expression": "SWITCH(SELECTEDVALUE(KPISelector[KPI],\"Revenue\"),\"Revenue\",\"$#,0\",\"Gross margin\",\"0.0%\",\"Velocity\",\"0.00\",\"Target attainment\",\"0.0%\")"
+            },
+            "lineageTag": "7ae3b6ed-8141-5754-9242-4e83ef95ae46"
+          },
+          {
+            "name": "Dynamic Title",
+            "expression": "\"SYNTHETIC | \" & SELECTEDVALUE(KPISelector[KPI],\"Revenue\") & \" | \" & IF(HASONEVALUE(DimCategory[Category]),SELECTEDVALUE(DimCategory[Category]),\"Selected categories\")",
+            "formatString": "@",
+            "displayFolder": "08 Scenarios",
+            "description": "Title always retains synthetic status.",
+            "lineageTag": "d96500d7-0062-554d-90b9-e0756b428b54"
+          },
+          {
+            "name": "Variance Colour",
+            "expression": "IF([Revenue vs Target]<0,\"#BA3548\",\"#087F70\")",
+            "formatString": "@",
+            "displayFolder": "08 Scenarios",
+            "description": "Used by conditional formatting for a plan gap; does not encode a causal claim.",
+            "lineageTag": "9cd2c18c-b500-50bc-ac45-406f3ceedb08"
+          }
+        ],
+        "lineageTag": "041d1255-6a33-5cb0-a33a-f23dc25a7f39"
+      },
+      {
+        "name": "DistributionGoal",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Value",
+            "dataType": "double",
+            "sourceColumn": "[Value]",
+            "formatString": "0%",
+            "summarizeBy": "none",
+            "extendedProperties": [
+              {
+                "type": "json",
+                "name": "ParameterMetadata",
+                "value": {
+                  "version": 0
+                }
+              }
+            ],
+            "lineageTag": "92f147ce-1bd9-5c15-abfb-7be95ceb22d2"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DistributionGoal",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "GENERATESERIES(0.4,0.95,0.05)"
+            }
+          }
+        ],
+        "lineageTag": "cedde54b-fb7a-5d8c-820c-cacb8d129f70"
+      },
+      {
+        "name": "KPISelector",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "KPI",
+            "dataType": "string",
+            "sourceColumn": "[KPI]",
+            "summarizeBy": "none",
+            "lineageTag": "8dedc91d-6c68-5646-874d-3cab3dfca4a5"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "KPISelector",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "DATATABLE(\"KPI\",STRING,{{\"Revenue\"},{\"Gross margin\"},{\"Velocity\"},{\"Target attainment\"}})"
+            }
+          }
+        ],
+        "lineageTag": "048ecdae-37f6-5bb6-b03e-4a3c5af3e4e3"
+      },
+      {
+        "name": "AnalysisAxis",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Axis",
+            "dataType": "string",
+            "sourceColumn": "[Value1]",
+            "sortByColumn": "Order",
+            "relatedColumnDetails": {
+              "groupByColumns": [
+                {
+                  "groupingColumn": "Fields"
+                }
+              ]
+            },
+            "lineageTag": "237059f9-1f6d-5cf9-836a-404b3b5cb832"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Fields",
+            "dataType": "string",
+            "sourceColumn": "[Value2]",
+            "isHidden": true,
+            "sortByColumn": "Order",
+            "extendedProperties": [
+              {
+                "type": "json",
+                "name": "ParameterMetadata",
+                "value": {
+                  "version": 3,
+                  "kind": 2
+                }
+              }
+            ],
+            "lineageTag": "5c6c2136-7fb4-5126-8ec1-f5431dcb313d"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order",
+            "dataType": "int64",
+            "sourceColumn": "[Value3]",
+            "isHidden": true,
+            "lineageTag": "ee4d8423-8651-55e8-838b-a4fb08007291"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "AnalysisAxis",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "{(\"Category\",NAMEOF(DimCategory[Category]),0),(\"Channel\",NAMEOF(DimChannel[Channel]),1),(\"Region\",NAMEOF(DimRegion[Region]),2)}"
+            }
+          }
+        ],
+        "lineageTag": "7b0040a1-2552-5190-8b94-2f204ea22f24"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "2b8316a0-0050-5b41-b38d-2b06c2906e76",
+        "fromTable": "FactSales",
+        "fromColumn": "Date",
+        "toTable": "DimDate",
+        "toColumn": "Date",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "3f3271d7-e86d-5d49-bcb6-a2dbeff5a0c0",
+        "fromTable": "FactSales",
+        "fromColumn": "CategoryKey",
+        "toTable": "DimCategory",
+        "toColumn": "CategoryKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "bc4a7890-0034-596d-8829-01e9b6aa088f",
+        "fromTable": "FactSales",
+        "fromColumn": "ChannelKey",
+        "toTable": "DimChannel",
+        "toColumn": "ChannelKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "282c3912-a567-557e-92d7-565431845162",
+        "fromTable": "FactSales",
+        "fromColumn": "RegionKey",
+        "toTable": "DimRegion",
+        "toColumn": "RegionKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "c59a3be3-16eb-550b-b7d1-b6a11a8d60ef",
+        "fromTable": "FactSales",
+        "fromColumn": "ProductKey",
+        "toTable": "DimProduct",
+        "toColumn": "ProductKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "d02f659c-db4e-56b8-943c-6b7e3852666e",
+        "fromTable": "FactSales",
+        "fromColumn": "CustomerKey",
+        "toTable": "DimCustomer",
+        "toColumn": "CustomerKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "816255b7-f1cb-5692-9a85-550040afba1c",
+        "fromTable": "FactDistribution",
+        "fromColumn": "Date",
+        "toTable": "DimDate",
+        "toColumn": "Date",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "42ef96b7-d800-5a93-93fe-c384c1db29db",
+        "fromTable": "FactDistribution",
+        "fromColumn": "CategoryKey",
+        "toTable": "DimCategory",
+        "toColumn": "CategoryKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "74106750-cc6e-5282-aaba-a320ec1133f1",
+        "fromTable": "FactDistribution",
+        "fromColumn": "ChannelKey",
+        "toTable": "DimChannel",
+        "toColumn": "ChannelKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "88d9c79b-37bf-5adf-b28c-8ee9a8719385",
+        "fromTable": "FactDistribution",
+        "fromColumn": "RegionKey",
+        "toTable": "DimRegion",
+        "toColumn": "RegionKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "72b772c4-2160-5bd0-b283-d3a9d4862884",
+        "fromTable": "FactDistribution",
+        "fromColumn": "ProductKey",
+        "toTable": "DimProduct",
+        "toColumn": "ProductKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "9f4ece03-a6e8-5f41-b003-d9534d9e2d85",
+        "fromTable": "FactDistribution",
+        "fromColumn": "CustomerKey",
+        "toTable": "DimCustomer",
+        "toColumn": "CustomerKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "82e655b9-dbe3-5866-ad14-efafba15ebd3",
+        "fromTable": "FactTargets",
+        "fromColumn": "Date",
+        "toTable": "DimDate",
+        "toColumn": "Date",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "f3337485-e87a-50ab-85f2-2074c2a3dfbc",
+        "fromTable": "FactTargets",
+        "fromColumn": "CategoryKey",
+        "toTable": "DimCategory",
+        "toColumn": "CategoryKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "245624a8-932f-57f6-906c-f6069069bfd9",
+        "fromTable": "FactTargets",
+        "fromColumn": "ChannelKey",
+        "toTable": "DimChannel",
+        "toColumn": "ChannelKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "14f62dcf-4463-50e3-abee-67824971deef",
+        "fromTable": "FactTargets",
+        "fromColumn": "RegionKey",
+        "toTable": "DimRegion",
+        "toColumn": "RegionKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "7d2db0e3-a108-535c-b28e-70dbb4d368b0",
+        "fromTable": "FactTargets",
+        "fromColumn": "ProductKey",
+        "toTable": "DimProduct",
+        "toColumn": "ProductKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "0bf8e48d-ea3f-5de8-ad08-2e45d8860f2c",
+        "fromTable": "FactTargets",
+        "fromColumn": "CustomerKey",
+        "toTable": "DimCustomer",
+        "toColumn": "CustomerKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "600143b2-7e32-5686-a9e4-a7b57d97eec4",
+        "fromTable": "FactPromotion",
+        "fromColumn": "Date",
+        "toTable": "DimDate",
+        "toColumn": "Date",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "a5e0a63c-decc-5955-9da4-2e11bba0ecec",
+        "fromTable": "FactPromotion",
+        "fromColumn": "CategoryKey",
+        "toTable": "DimCategory",
+        "toColumn": "CategoryKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "5de7b81b-b5cf-5cd4-942f-cec2d93ccaed",
+        "fromTable": "FactPromotion",
+        "fromColumn": "ChannelKey",
+        "toTable": "DimChannel",
+        "toColumn": "ChannelKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "56bd38d2-8d81-5a2d-8d75-e040ff8db668",
+        "fromTable": "FactPromotion",
+        "fromColumn": "RegionKey",
+        "toTable": "DimRegion",
+        "toColumn": "RegionKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "9468fa9b-7fc2-5fb2-a3c1-f24dbdb94f58",
+        "fromTable": "FactPromotion",
+        "fromColumn": "ProductKey",
+        "toTable": "DimProduct",
+        "toColumn": "ProductKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "c7df00d1-7def-55b1-9cf9-2103f088c7bc",
+        "fromTable": "FactPromotion",
+        "fromColumn": "CustomerKey",
+        "toTable": "DimCustomer",
+        "toColumn": "CustomerKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "888767b0-381b-53c8-ac7f-3658e51bfdf2",
+        "fromTable": "FactMarket",
+        "fromColumn": "Date",
+        "toTable": "DimDate",
+        "toColumn": "Date",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "901dda8f-1ec2-56c7-b5de-ad9933462bce",
+        "fromTable": "FactMarket",
+        "fromColumn": "CategoryKey",
+        "toTable": "DimCategory",
+        "toColumn": "CategoryKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "48edd50b-7cf1-5582-8480-c3369dd364fd",
+        "fromTable": "FactMarket",
+        "fromColumn": "ChannelKey",
+        "toTable": "DimChannel",
+        "toColumn": "ChannelKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "d095e807-a01e-5068-a7cc-e9cdc5bc58aa",
+        "fromTable": "FactMarket",
+        "fromColumn": "RegionKey",
+        "toTable": "DimRegion",
+        "toColumn": "RegionKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "178d2782-0c59-56db-bc4c-8272644748da",
+        "fromTable": "FactInnovationPanel",
+        "fromColumn": "Date",
+        "toTable": "DimDate",
+        "toColumn": "Date",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "ce244ce3-08e8-583f-8ce6-c06097294242",
+        "fromTable": "FactInnovationPanel",
+        "fromColumn": "CategoryKey",
+        "toTable": "DimCategory",
+        "toColumn": "CategoryKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "59fec1a0-a5d3-5e85-9f6e-76ec4702fae0",
+        "fromTable": "FactInnovationPanel",
+        "fromColumn": "ChannelKey",
+        "toTable": "DimChannel",
+        "toColumn": "ChannelKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "fab472b9-cda7-5385-ac5a-ceea00f8c359",
+        "fromTable": "FactInnovationPanel",
+        "fromColumn": "RegionKey",
+        "toTable": "DimRegion",
+        "toColumn": "RegionKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "f02e4751-f537-53ba-af57-f91b839a4941",
+        "fromTable": "FactInnovationPanel",
+        "fromColumn": "ProductKey",
+        "toTable": "DimProduct",
+        "toColumn": "ProductKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "3ef52d32-fb4e-5f60-a443-069b5d8eefac",
+        "fromTable": "FactInnovationPanel",
+        "fromColumn": "CustomerKey",
+        "toTable": "DimCustomer",
+        "toColumn": "CustomerKey",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DataRoot",
+        "kind": "m",
+        "expression": "\"C:/APEX/apex-insights/data/processed/\" meta [IsParameterQuery=true,Type=\"Text\",IsParameterQueryRequired=true]"
+      },
+      {
+        "name": "fnLoadCsv",
+        "kind": "m",
+        "expression": "(relativePath as text, types as list, keyColumns as list, nullableColumns as list, permittedClasses as list) as table =>\nlet\n    Source = Csv.Document(File.Contents(DataRoot & relativePath),[Delimiter=\",\",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),\n    Headers = Table.PromoteHeaders(Source,[PromoteAllScalars=true]),\n    Expected = List.Transform(types, each _{0}),\n    SchemaChecked = if List.Sort(Table.ColumnNames(Headers)) <> List.Sort(Expected) then error \"CSV schema mismatch: \" & relativePath else Headers,\n    Trimmed = Table.TransformColumns(SchemaChecked,List.Transform(Expected,(c)=>{c,each if _=null then null else Text.Trim(Text.From(_)),type nullable text})),\n    EmptyToNull = Table.ReplaceValue(Trimmed,\"\",null,Replacer.ReplaceValue,Expected),\n    Typed = Table.TransformColumnTypes(EmptyToNull,types,\"en-AU\"),\n    RequiredColumns = List.Difference(Expected,nullableColumns),\n    InvalidNulls = Table.SelectRows(Typed,(row)=>List.AnyTrue(List.Transform(RequiredColumns,(c)=>Record.Field(row,c)=null))),\n    NullChecked = if Table.RowCount(InvalidNulls)>0 then error \"Missing required value: \" & relativePath else Typed,\n    KeyGroups = Table.Group(NullChecked,keyColumns,{{\"Rows\",each Table.RowCount(_),Int64.Type}}),\n    DuplicateKeys = Table.SelectRows(KeyGroups,each [Rows]>1),\n    KeyChecked = if Table.RowCount(DuplicateKeys)>0 then error \"Duplicate logical key: \" & relativePath else NullChecked,\n    InvalidClasses = Table.SelectRows(KeyChecked,each not List.Contains(permittedClasses,[DataClass])),\n    Result = if Table.RowCount(InvalidClasses)>0 then error \"Provenance mismatch: \" & relativePath else KeyChecked\nin Result"
+      },
+      {
+        "name": "fnCalendar",
+        "kind": "m",
+        "expression": "(startDate as date,endDate as date,dataClass as text) as table =>\nlet\n    Dates = Table.FromList(List.Dates(startDate,Duration.Days(endDate-startDate)+1,#duration(1,0,0,0)),Splitter.SplitByNothing(),{\"Date\"}),\n    Typed = Table.TransformColumnTypes(Dates,{{\"Date\",type date}}),\n    Year = Table.AddColumn(Typed,\"Year\",each Date.Year([Date]),Int64.Type),\n    MonthNumber = Table.AddColumn(Year,\"MonthNumber\",each Date.Month([Date]),Int64.Type),\n    Month = Table.AddColumn(MonthNumber,\"Month\",each Date.ToText([Date],\"MMM\",\"en-AU\"),type text),\n    YearMonth = Table.AddColumn(Month,\"YearMonth\",each Date.ToText([Date],\"yyyy-MM\",\"en-AU\"),type text),\n    Quarter = Table.AddColumn(YearMonth,\"Quarter\",each \"Q\" & Text.From(Date.QuarterOfYear([Date])),type text),\n    WeekStart = Table.AddColumn(Quarter,\"WeekStart\",each Date.StartOfWeek([Date],Day.Monday),type date),\n    Provenance = Table.AddColumn(WeekStart,\"DataClass\",each dataClass,type text)\nin Provenance"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DimCategory\", \"DimChannel\", \"DimCustomer\", \"DimDate\", \"DimProduct\", \"DimRegion\", \"FactDistribution\", \"FactInnovationPanel\", \"FactMarket\", \"FactPromotion\", \"FactSales\", \"FactTargets\", \"ActionCentre\", \"PublicContext\", \"Measures\", \"DistributionGoal\", \"KPISelector\", \"AnalysisAxis\"]"
+      }
+    ]
+  }
+}

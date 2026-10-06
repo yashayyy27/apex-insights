@@ -1,0 +1,11 @@
+{
+  "name": "APEX INSIGHTS — Commercial & Performance Intelligence",
+  "seed": 20261006,
+  "commercial_start": "2023-01-01",
+  "commercial_end": "2024-12-31",
+  "f1_seasons": [2023, 2024],
+  "sample_lap_races": [[2024, 1], [2024, 8]],
+  "api_request_interval_seconds": 8,
+  "currency": "AUD",
+  "public_context_scope": "CCEP Group FY2024; not Australian category performance"
+}

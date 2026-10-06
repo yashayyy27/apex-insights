@@ -1,0 +1,1 @@
+fnLoadCsv("f1/DimRace.csv",{{"RaceKey",Int64.Type},{"Season",Int64.Type},{"Round",Int64.Type},{"Race",type text},{"CircuitKey",type text},{"Date",type date},{"DataClass",type text}},{"RaceKey"},{},{"PUBLIC","PUBLIC_DERIVED"})

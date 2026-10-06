@@ -1,0 +1,152 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "required_deliverables",
+      "passed": true,
+      "detail": [
+        "README.md",
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md",
+        "requirements.txt",
+        "sql/schema.sql",
+        "sql/transformations.sql",
+        "sql/analysis_queries.sql",
+        "sql/validation_queries.sql",
+        "docs/methodology.md",
+        "docs/data_dictionary.md",
+        "docs/portfolio_case_study.md",
+        "docs/interview_guide.md",
+        "docs/resume_bullets.md",
+        "docs/quality_gate.md",
+        "powerbi/Commercial.pbip",
+        "powerbi/Motorsport.pbip",
+        "powerbi/dax_measures.md",
+        "powerbi/power_query.md",
+        "powerbi/runtime_acceptance.md",
+        "excel/management_pack.xlsx",
+        "excel/native_acceptance.md",
+        "assets/preview.html"
+      ]
+    },
+    {
+      "check": "no_empty_deliverables",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "github_file_size_limit",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "json_syntax",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "local_documentation_links",
+      "passed": true,
+      "detail": {
+        "checked": 33,
+        "missing": []
+      }
+    },
+    {
+      "check": "processed_csv_hashes",
+      "passed": true,
+      "detail": {
+        "files": 38,
+        "changed": []
+      }
+    },
+    {
+      "check": "reference_preview_provenance",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "check": "xlsx_nine_sheets",
+      "passed": true,
+      "detail": [
+        "Executive Summary",
+        "Category Performance",
+        "Customer Channel",
+        "Innovation",
+        "Scenario Analysis",
+        "Monthly Inputs",
+        "SKU Inputs",
+        "Launch Inputs",
+        "Methodology"
+      ]
+    },
+    {
+      "check": "xlsx_formula_cached_values",
+      "passed": true,
+      "detail": {
+        "formulas": 219
+      }
+    },
+    {
+      "check": "xlsx_no_cached_errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "xlsx_sumifs_xlookup",
+      "passed": true,
+      "detail": "Functions retained in exported XML"
+    },
+    {
+      "check": "xlsx_three_native_charts",
+      "passed": true,
+      "detail": [
+        "xl/drawings/charts/chart1.xml",
+        "xl/drawings/charts/chart2.xml",
+        "xl/drawings/charts/chart3.xml"
+      ]
+    },
+    {
+      "check": "xlsx_export_reconciles",
+      "passed": true,
+      "detail": {
+        "revenue": 87719379.46999995,
+        "gross_margin": 0.4868881949239813
+      }
+    },
+    {
+      "check": "xlsx_terminal_controls",
+      "passed": true,
+      "detail": "All three saved reconciliation residuals = 0"
+    },
+    {
+      "check": "excel_runtime_honesty",
+      "passed": true,
+      "detail": "Artifact engine verified; native app acceptance pending"
+    },
+    {
+      "check": "powerbi_runtime_honesty",
+      "passed": true,
+      "detail": {
+        "status": "PASS",
+        "schema_files_validated": 409,
+        "field_bindings_checked": 332,
+        "errors": [],
+        "desktop_open": "NOT_TESTED",
+        "dax_execution": "NOT_TESTED",
+        "m_refresh": "NOT_TESTED",
+        "interactions": "NOT_TESTED"
+      }
+    },
+    {
+      "check": "schema_licence_retained",
+      "passed": true,
+      "detail": "Microsoft MIT licence alongside copied schemas"
+    }
+  ],
+  "file_count": 720,
+  "total_delivered_bytes": 128652259,
+  "largest_file": "data/synthetic/fmcg/FactSales.csv",
+  "native_powerbi_runtime": "NOT_TESTED",
+  "native_excel_runtime": "NOT_TESTED"
+}

@@ -1,0 +1,15 @@
+{
+  "engine": "artifact-tool",
+  "revenue_reconciled": true,
+  "margin_reconciled": true,
+  "scenario_perturbation": {
+    "before": 477012.2058542108,
+    "after": 378326.58468336874,
+    "baseline_unchanged": true
+  },
+  "year_selector_tested": true,
+  "zero_expansion_tested": true,
+  "error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "native_excel_runtime": "NOT_TESTED",
+  "pivot_tables": "NOT_CREATED; SUMIFS chosen for auditable export"
+}

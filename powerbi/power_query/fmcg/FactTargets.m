@@ -1,0 +1,1 @@
+fnLoadCsv("fmcg/FactTargets.csv",{{"Date",type date},{"ProductKey",Int64.Type},{"CategoryKey",Int64.Type},{"CustomerKey",Int64.Type},{"ChannelKey",Int64.Type},{"RegionKey",Int64.Type},{"DataClass",type text},{"TargetUnits",Int64.Type},{"TargetRevenue",type number}},{"Date","ProductKey","CustomerKey"},{},{"SYNTHETIC"})

@@ -1,0 +1,25 @@
+CircuitKey,Circuit,Country,Locality,Latitude,Longitude,DataClass
+albert_park,Albert Park Grand Prix Circuit,Australia,Melbourne,-37.849700,144.968000,PUBLIC
+americas,Circuit of the Americas,USA,Austin,30.132800,-97.641100,PUBLIC
+bahrain,Bahrain International Circuit,Bahrain,Sakhir,26.032500,50.510600,PUBLIC
+baku,Baku City Circuit,Azerbaijan,Baku,40.372500,49.853300,PUBLIC
+catalunya,Circuit de Barcelona-Catalunya,Spain,Barcelona,41.570000,2.261110,PUBLIC
+hungaroring,Hungaroring,Hungary,Budapest,47.578900,19.248600,PUBLIC
+imola,Autodromo Enzo e Dino Ferrari,Italy,Imola,44.343900,11.716700,PUBLIC
+interlagos,Autódromo José Carlos Pace,Brazil,São Paulo,-23.703600,-46.699700,PUBLIC
+jeddah,Jeddah Corniche Circuit,Saudi Arabia,Jeddah,21.631900,39.104400,PUBLIC
+losail,Lusail International Circuit,Qatar,Lusail,25.490000,51.454200,PUBLIC
+marina_bay,Marina Bay Street Circuit,Singapore,Marina Bay,1.291400,103.864000,PUBLIC
+miami,Miami International Autodrome,USA,Miami,25.958100,-80.238900,PUBLIC
+monaco,Circuit de Monaco,Monaco,Monte Carlo,43.734700,7.420560,PUBLIC
+monza,Autodromo Nazionale di Monza,Italy,Monza,45.615600,9.281110,PUBLIC
+red_bull_ring,Red Bull Ring,Austria,Spielberg,47.219700,14.764700,PUBLIC
+rodriguez,Autódromo Hermanos Rodríguez,Mexico,Mexico City,19.404200,-99.090700,PUBLIC
+shanghai,Shanghai International Circuit,China,Shanghai,31.338900,121.220000,PUBLIC
+silverstone,Silverstone Circuit,UK,Silverstone,52.078600,-1.016940,PUBLIC
+spa,Circuit de Spa-Francorchamps,Belgium,Spa,50.437200,5.971390,PUBLIC
+suzuka,Suzuka Circuit,Japan,Suzuka,34.843100,136.541000,PUBLIC
+vegas,Las Vegas Strip Street Circuit,USA,Las Vegas,36.114700,-115.173000,PUBLIC
+villeneuve,Circuit Gilles Villeneuve,Canada,Montreal,45.500000,-73.522800,PUBLIC
+yas_marina,Yas Marina Circuit,UAE,Abu Dhabi,24.467200,54.603100,PUBLIC
+zandvoort,Circuit Park Zandvoort,Netherlands,Zandvoort,52.388800,4.540920,PUBLIC
