@@ -231,11 +231,5 @@ Detailed limitations: [methodology](docs/methodology.md).
 
 ## Future Improvements
 
-Complete Windows acceptance and actual Power BI screenshots first. With lawful
-access, add scanner sell-out/ACV, inventory/availability, real experimental
-promotion baselines, costs/cannibalisation and governed customer security.
-For F1, evaluate legitimate licensed compound/stint datasets before making
-strategy-effect claims. Measure refresh/performance before scaling or deploying.
-
 Recruiter materials: [case study](docs/portfolio_case_study.md),
 [interview guide](docs/interview_guide.md), [defensible resume bullets](docs/resume_bullets.md).
